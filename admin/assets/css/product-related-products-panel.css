@@ -1,0 +1,81 @@
+/**
+ * Related products block editor panel.
+ *
+ * @package AveniaDigitalProducts
+ * @since 1.0.0
+ */
+
+.aveniadp-product-related-panel .components-panel__body-title {
+	font-weight: 500;
+}
+
+.aveniadp-product-related-panel .components-panel__body-toggle {
+	border-top: 1px solid #e0e0e0;
+}
+
+.aveniadp-product-related-panel__help {
+	margin: 0 0 12px;
+	color: #757575;
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+.aveniadp-product-related-panel .aveniadp-related-products-search-wrap {
+	margin: 0 0 8px;
+}
+
+.aveniadp-product-related-panel .aveniadp-related-products-search {
+	width: 100%;
+}
+
+.aveniadp-product-related-panel .aveniadp-related-products-list {
+	display: block;
+	max-height: 280px;
+	height: 280px;
+	overflow: auto;
+	min-height: 0;
+	overscroll-behavior: contain;
+	-webkit-overflow-scrolling: touch;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	background: #fff;
+	margin: 0 0 8px;
+}
+
+.aveniadp-product-related-panel .aveniadp-related-products-empty {
+	margin: 12px;
+}
+
+.aveniadp-product-related-panel .aveniadp-related-product-item {
+	display: flex;
+	align-items: flex-start;
+	gap: 8px;
+	padding: 8px 10px;
+	margin: 0;
+	border-bottom: 1px solid #f0f0f1;
+	cursor: pointer;
+}
+
+.aveniadp-product-related-panel .aveniadp-related-product-item:last-child {
+	border-bottom: 0;
+}
+
+.aveniadp-product-related-panel .aveniadp-related-product-item.is-disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+.aveniadp-product-related-panel .aveniadp-related-product-checkbox {
+	margin: 2px 0 0;
+}
+
+.aveniadp-product-related-panel .aveniadp-related-product-title {
+	font-size: 13px;
+	line-height: 1.4;
+}
+
+.aveniadp-product-related-panel .aveniadp-related-products-count {
+	margin: 0;
+	color: #757575;
+	font-size: 12px;
+}

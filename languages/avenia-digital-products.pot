@@ -1,0 +1,3075 @@
+# Copyright (C) 2026 Avenia Labs
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Avenia Digital Products 1.0.0\n"
+"Report-Msgid-Bugs-To: https://aveniadigitalproducts.com\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-08-11T11:06:15+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: avenia-digital-products\n"
+
+#. Plugin Name of the plugin
+#: avenia-digital-products.php
+#: admin/class-aveniadp-admin.php:64
+#: admin/class-aveniadp-admin.php:65
+#: admin/views/dashboard.php:37
+#: includes/infrastructure/class-aveniadp-blocks.php:76
+msgid "Avenia Digital Products"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: avenia-digital-products.php
+msgid "https://aveniadigitalproducts.com"
+msgstr ""
+
+#. Description of the plugin
+#: avenia-digital-products.php
+msgid "Sell digital downloads on WordPress with Stripe, PayPal, a cart, checkout, and secure file delivery."
+msgstr ""
+
+#. Author of the plugin
+#: avenia-digital-products.php
+msgid "Avenia Labs"
+msgstr ""
+
+#. Author URI of the plugin
+#: avenia-digital-products.php
+msgid "https://avenialabs.com"
+msgstr ""
+
+#: admin/class-aveniadp-admin-access.php:39
+#: admin/class-aveniadp-admin-access.php:68
+msgid "You do not have permission to perform this action."
+msgstr ""
+
+#: admin/class-aveniadp-admin-access.php:57
+msgid "Product access has been revoked for this order. Billing at Stripe or PayPal was not changed."
+msgstr ""
+
+#: admin/class-aveniadp-admin-access.php:84
+msgid "No active access found to revoke for this customer."
+msgstr ""
+
+#. translators: %d: number of orders
+#: admin/class-aveniadp-admin-access.php:89
+#, php-format
+msgid "Access revoked locally for %d order. Billing at Stripe or PayPal was not changed."
+msgid_plural "Access revoked locally for %d orders. Billing at Stripe or PayPal was not changed."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/class-aveniadp-admin-discounts.php:111
+msgid "Discount code deleted."
+msgstr ""
+
+#: admin/class-aveniadp-admin-discounts.php:170
+msgid "Discount code saved."
+msgstr ""
+
+#: admin/class-aveniadp-admin-discounts.php:189
+#: includes/commerce/class-aveniadp-discounts.php:223
+msgid "Discount code not found."
+msgstr ""
+
+#: admin/class-aveniadp-admin-settings.php:278
+msgid "••••••••  (leave blank to keep current)"
+msgstr ""
+
+#: admin/class-aveniadp-admin.php:75
+#: admin/class-aveniadp-admin.php:76
+#: admin/views/customer-view.php:83
+#: admin/views/customers.php:103
+#: admin/views/orders.php:67
+msgid "Orders"
+msgstr ""
+
+#: admin/class-aveniadp-admin.php:84
+#: admin/class-aveniadp-admin.php:85
+#: admin/views/customers.php:64
+msgid "Customers"
+msgstr ""
+
+#: admin/class-aveniadp-admin.php:93
+#: admin/class-aveniadp-admin.php:94
+#: admin/views/discounts.php:150
+msgid "Discount Codes"
+msgstr ""
+
+#: admin/class-aveniadp-admin.php:102
+#: admin/class-aveniadp-admin.php:103
+#: admin/views/status.php:24
+msgid "System Status"
+msgstr ""
+
+#: admin/class-aveniadp-admin.php:111
+#: admin/class-aveniadp-admin.php:112
+msgid "Settings"
+msgstr ""
+
+#: admin/class-aveniadp-admin.php:121
+#: admin/class-aveniadp-admin.php:122
+msgid "Upgrade to Full"
+msgstr ""
+
+#: admin/class-aveniadp-admin.php:150
+#: admin/class-aveniadp-admin.php:267
+msgid "Add Product"
+msgstr ""
+
+#: admin/class-aveniadp-admin.php:163
+#: admin/class-aveniadp-admin.php:270
+msgid "Product Categories"
+msgstr ""
+
+#: admin/class-aveniadp-admin.php:177
+#: admin/class-aveniadp-admin.php:273
+msgid "Product Tags"
+msgstr ""
+
+#: admin/class-aveniadp-admin.php:264
+msgid "Dashboard"
+msgstr ""
+
+#: admin/class-aveniadp-admin.php:295
+#: admin/views/settings.php:16
+msgid "Sorry, you are not allowed to access this page."
+msgstr ""
+
+#: admin/class-aveniadp-admin.php:396
+#: admin/assets/js/product-gallery-panel.js:130
+msgid "Add images to gallery"
+msgstr ""
+
+#: admin/class-aveniadp-admin.php:397
+#: includes/products/class-aveniadp-products.php:806
+#: admin/assets/js/product-gallery-panel.js:132
+#: admin/assets/js/product-gallery-panel.js:210
+msgid "Add to gallery"
+msgstr ""
+
+#: admin/class-aveniadp-admin.php:398
+#: includes/products/class-aveniadp-products.php:800
+#: admin/assets/js/product-gallery-panel.js:196
+msgid "Remove image"
+msgstr ""
+
+#. translators: 1: selected related product count, 2: maximum allowed
+#. translators: 1: selected count, 2: maximum count
+#: admin/class-aveniadp-admin.php:400
+#: includes/products/class-aveniadp-products.php:917
+#: admin/assets/js/product-related-products-panel.js:263
+#, php-format,js-format
+msgid "%1$d of %2$d selected"
+msgstr ""
+
+#: admin/class-aveniadp-admin.php:401
+msgid "Revoke product access for this order? Downloads will stop working immediately. Stripe or PayPal billing will not be changed."
+msgstr ""
+
+#: admin/class-aveniadp-admin.php:402
+msgid "Revoke all product access for this customer? This cannot be undone from the customer account. Stripe or PayPal billing will not be changed."
+msgstr ""
+
+#: admin/class-aveniadp-admin.php:403
+msgid "Link copied to clipboard."
+msgstr ""
+
+#: admin/class-aveniadp-admin.php:404
+#: includes/functions/aveniadp-pricing-functions.php:202
+msgid "Unlimited sites"
+msgstr ""
+
+#. translators: %s: number of sites (singular)
+#. translators: %s: number of sites
+#: admin/class-aveniadp-admin.php:406
+#: includes/functions/aveniadp-pricing-functions.php:213
+#, php-format
+msgid "%s site"
+msgstr ""
+
+#. translators: %s: number of sites (plural)
+#. translators: %s: number of sites
+#: admin/class-aveniadp-admin.php:408
+#: includes/functions/aveniadp-pricing-functions.php:220
+#, php-format
+msgid "%s sites"
+msgstr ""
+
+#: admin/class-aveniadp-admin.php:409
+msgid "Sending…"
+msgstr ""
+
+#: admin/class-aveniadp-admin.php:410
+msgid "Test email sent."
+msgstr ""
+
+#: admin/class-aveniadp-admin.php:411
+#: admin/class-aveniadp-admin.php:525
+msgid "Failed to send test email. Check that wp_mail is configured."
+msgstr ""
+
+#: admin/class-aveniadp-admin.php:500
+msgid "You do not have permission to send test emails."
+msgstr ""
+
+#: admin/class-aveniadp-admin.php:505
+msgid "Invalid email type."
+msgstr ""
+
+#: admin/class-aveniadp-admin.php:510
+msgid "No valid email address found for your user account."
+msgstr ""
+
+#. translators: %s: recipient email address
+#: admin/class-aveniadp-admin.php:532
+#, php-format
+msgid "Test email sent to %s."
+msgstr ""
+
+#: admin/views/customer-view.php:20
+msgid "Customer not found"
+msgstr ""
+
+#: admin/views/customer-view.php:49
+msgid "Back to customers"
+msgstr ""
+
+#: admin/views/customer-view.php:54
+#: admin/views/customers.php:100
+msgid "Customer ID"
+msgstr ""
+
+#: admin/views/customer-view.php:58
+#: admin/views/customers.php:101
+#: public/templates/checkout.php:96
+msgid "Name"
+msgstr ""
+
+#: admin/views/customer-view.php:62
+#: admin/views/customers.php:102
+#: public/templates/checkout.php:100
+#: public/templates/login.php:41
+msgid "Email"
+msgstr ""
+
+#: admin/views/customer-view.php:66
+msgid "WordPress user"
+msgstr ""
+
+#: admin/views/customer-view.php:73
+msgid "No account linked"
+msgstr ""
+
+#: admin/views/customer-view.php:78
+msgid "Registered"
+msgstr ""
+
+#: admin/views/customer-view.php:88
+#: admin/views/orders.php:99
+msgid "Order ID"
+msgstr ""
+
+#: admin/views/customer-view.php:89
+#: admin/views/order-view.php:108
+#: admin/views/orders.php:101
+#: includes/infrastructure/class-aveniadp-emails.php:154
+#: includes/infrastructure/class-aveniadp-emails.php:164
+#: public/class-aveniadp-public.php:140
+#: public/templates/cart-drawer.php:74
+#: public/templates/cart.php:112
+#: public/templates/checkout.php:74
+msgid "Total"
+msgstr ""
+
+#: admin/views/customer-view.php:90
+#: admin/views/order-view.php:61
+#: admin/views/orders.php:102
+msgid "Status"
+msgstr ""
+
+#: admin/views/customer-view.php:91
+#: admin/views/order-view.php:65
+msgid "Access"
+msgstr ""
+
+#: admin/views/customer-view.php:92
+#: admin/views/settings.php:46
+msgid "Payment"
+msgstr ""
+
+#: admin/views/customer-view.php:93
+#: admin/views/order-view.php:131
+#: admin/views/orders.php:104
+#: blocks/products/build/index.js:1
+#: blocks/products/index.js:117
+msgid "Date"
+msgstr ""
+
+#: admin/views/customer-view.php:94
+#: admin/views/customers.php:105
+#: admin/views/discounts.php:163
+#: admin/views/orders.php:105
+#: includes/products/class-aveniadp-products.php:585
+#: public/templates/account.php:124
+#: public/templates/cart.php:35
+msgid "Actions"
+msgstr ""
+
+#: admin/views/customer-view.php:110
+#: admin/views/order-view.php:85
+msgid "Active"
+msgstr ""
+
+#: admin/views/customer-view.php:112
+#: admin/views/order-view.php:70
+msgid "Revoked"
+msgstr ""
+
+#: admin/views/customer-view.php:119
+#: admin/views/customers.php:118
+#: admin/views/orders.php:123
+msgid "View"
+msgstr ""
+
+#: admin/views/customer-view.php:127
+#: admin/views/dashboard.php:77
+msgid "No orders yet."
+msgstr ""
+
+#: admin/views/customer-view.php:132
+#: admin/views/order-view.php:162
+msgid "Access control"
+msgstr ""
+
+#: admin/views/customer-view.php:134
+msgid "Revoke all product access for this customer locally. Orders and purchase history are kept for records. Stripe or PayPal billing is not changed."
+msgstr ""
+
+#: admin/views/customer-view.php:137
+msgid "Deleting the WordPress user alone does not revoke downloads. Use revoke access here first, then delete the WordPress account from Users if needed."
+msgstr ""
+
+#: admin/views/customer-view.php:145
+msgid "Revoke all access"
+msgstr ""
+
+#: admin/views/customers.php:68
+msgid "Customers are created automatically from purchases and free downloads that collect an email."
+msgstr ""
+
+#: admin/views/customers.php:73
+#: admin/views/customers.php:75
+msgid "Search customers"
+msgstr ""
+
+#: admin/views/customers.php:74
+msgid "Email, name, customer ID..."
+msgstr ""
+
+#: admin/views/customers.php:77
+#: admin/views/orders.php:76
+msgid "Clear"
+msgstr ""
+
+#. translators: %d: number of matching customers shown
+#: admin/views/customers.php:88
+#, php-format
+msgid "Showing %d matching customer (max 100)."
+msgid_plural "Showing %d matching customers (max 100)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/views/customers.php:92
+msgid "Showing the 100 most recent customers. Use search to find older customers."
+msgstr ""
+
+#: admin/views/customers.php:104
+msgid "Customer since"
+msgstr ""
+
+#: admin/views/customers.php:129
+msgid "No customers matched your search."
+msgstr ""
+
+#: admin/views/customers.php:131
+msgid "No customers found."
+msgstr ""
+
+#: admin/views/dashboard.php:41
+msgid "Total Sales"
+msgstr ""
+
+#: admin/views/dashboard.php:43
+msgid "Sum of completed orders."
+msgstr ""
+
+#: admin/views/dashboard.php:47
+msgid "Recent Orders"
+msgstr ""
+
+#. translators: %d: order ID
+#: admin/views/dashboard.php:56
+#: admin/views/order-view.php:37
+#: public/templates/account.php:104
+#, php-format
+msgid "Order #%d"
+msgstr ""
+
+#: admin/views/dashboard.php:62
+msgid "Unknown customer"
+msgstr ""
+
+#: admin/views/dashboard.php:73
+msgid "View all orders"
+msgstr ""
+
+#: admin/views/discounts.php:55
+msgid "Edit Discount Code"
+msgstr ""
+
+#: admin/views/discounts.php:56
+#: admin/views/discounts.php:152
+msgid "Add New Discount Code"
+msgstr ""
+
+#: admin/views/discounts.php:69
+#: admin/views/discounts.php:158
+msgid "Code"
+msgstr ""
+
+#: admin/views/discounts.php:72
+msgid "The code customers enter at checkout."
+msgstr ""
+
+#: admin/views/discounts.php:76
+msgid "Discount Type"
+msgstr ""
+
+#: admin/views/discounts.php:79
+msgid "Percentage"
+msgstr ""
+
+#: admin/views/discounts.php:80
+msgid "Fixed Amount"
+msgstr ""
+
+#: admin/views/discounts.php:85
+msgid "Discount Value"
+msgstr ""
+
+#: admin/views/discounts.php:88
+msgid "Enter a percentage (e.g. 10) or fixed amount."
+msgstr ""
+
+#: admin/views/discounts.php:92
+msgid "Usage Limit"
+msgstr ""
+
+#: admin/views/discounts.php:95
+msgid "Total uses across all customers. Leave blank for unlimited."
+msgstr ""
+
+#: admin/views/discounts.php:99
+msgid "Usage Limit Per Customer"
+msgstr ""
+
+#: admin/views/discounts.php:102
+msgid "How many times each customer can use this code. Leave blank for unlimited."
+msgstr ""
+
+#: admin/views/discounts.php:106
+msgid "Expiration Date"
+msgstr ""
+
+#: admin/views/discounts.php:109
+msgid "Leave blank if the code never expires."
+msgstr ""
+
+#: admin/views/discounts.php:113
+msgid "Minimum Order Amount"
+msgstr ""
+
+#: admin/views/discounts.php:119
+msgid "Applicable Products"
+msgstr ""
+
+#: admin/views/discounts.php:128
+msgid "Leave empty to apply to all products."
+msgstr ""
+
+#: admin/views/discounts.php:134
+msgid "Save Discount Code"
+msgstr ""
+
+#: admin/views/discounts.php:135
+msgid "Cancel"
+msgstr ""
+
+#: admin/views/discounts.php:159
+msgid "Type"
+msgstr ""
+
+#: admin/views/discounts.php:160
+msgid "Value"
+msgstr ""
+
+#: admin/views/discounts.php:161
+msgid "Usage"
+msgstr ""
+
+#: admin/views/discounts.php:162
+msgid "Expires"
+msgstr ""
+
+#. translators: 1: usage count, 2: usage limit
+#: admin/views/discounts.php:184
+#, php-format
+msgid "%1$d / %2$d"
+msgstr ""
+
+#. translators: %d: usage count
+#: admin/views/discounts.php:187
+#, php-format
+msgid "%d (unlimited)"
+msgstr ""
+
+#: admin/views/discounts.php:196
+msgid "Never"
+msgstr ""
+
+#: admin/views/discounts.php:202
+msgid "Edit"
+msgstr ""
+
+#: admin/views/discounts.php:205
+msgid "Delete"
+msgstr ""
+
+#: admin/views/discounts.php:213
+msgid "No discount codes found."
+msgstr ""
+
+#: admin/views/order-view.php:20
+msgid "Order not found"
+msgstr ""
+
+#: admin/views/order-view.php:44
+msgid "Back to orders"
+msgstr ""
+
+#: admin/views/order-view.php:49
+#: admin/views/orders.php:100
+#: includes/infrastructure/class-aveniadp-emails.php:162
+#: includes/infrastructure/class-aveniadp-emails.php:729
+msgid "Customer"
+msgstr ""
+
+#. translators: %s: formatted date
+#: admin/views/order-view.php:77
+#, php-format
+msgid "on %s"
+msgstr ""
+
+#: admin/views/order-view.php:91
+#: admin/views/settings.php:109
+#: includes/functions/aveniadp-tax-functions.php:129
+#: public/class-aveniadp-public.php:143
+msgid "Tax"
+msgstr ""
+
+#. translators: %s: tax rate percentage
+#: admin/views/order-view.php:99
+#, php-format
+msgid "(%s%%)"
+msgstr ""
+
+#: admin/views/order-view.php:112
+msgid "Payment method"
+msgstr ""
+
+#: admin/views/order-view.php:118
+msgid "Transaction ID"
+msgstr ""
+
+#: admin/views/order-view.php:136
+msgid "Items"
+msgstr ""
+
+#: admin/views/order-view.php:141
+#: includes/gateways/class-aveniadp-stripe.php:280
+#: includes/gateways/class-aveniadp-stripe.php:283
+#: includes/infrastructure/class-aveniadp-emails.php:286
+#: includes/infrastructure/class-aveniadp-emails.php:292
+#: includes/infrastructure/class-aveniadp-emails.php:394
+#: includes/products/class-aveniadp-products.php:72
+#: includes/products/class-aveniadp-products.php:99
+#: public/templates/account.php:122
+#: public/templates/cart.php:33
+msgid "Product"
+msgstr ""
+
+#: admin/views/order-view.php:142
+#: includes/infrastructure/class-aveniadp-emails.php:287
+#: includes/products/class-aveniadp-products.php:584
+#: public/templates/cart.php:34
+#: blocks/products/build/index.js:1
+#: blocks/products/index.js:125
+msgid "Price"
+msgstr ""
+
+#: admin/views/order-view.php:143
+#: includes/products/class-aveniadp-products.php:583
+#: includes/products/class-aveniadp-products.php:677
+#: public/templates/single-product-content.php:131
+msgid "Sites"
+msgstr ""
+
+#: admin/views/order-view.php:157
+msgid "No items found."
+msgstr ""
+
+#: admin/views/order-view.php:164
+msgid "Revoke download access locally. Stripe or PayPal billing is not changed."
+msgstr ""
+
+#: admin/views/order-view.php:172
+msgid "Revoke access"
+msgstr ""
+
+#: admin/views/orders.php:72
+#: admin/views/orders.php:74
+msgid "Search orders"
+msgstr ""
+
+#: admin/views/orders.php:73
+msgid "Order ID, email, name, transaction..."
+msgstr ""
+
+#. translators: %d: number of matching orders shown
+#: admin/views/orders.php:87
+#, php-format
+msgid "Showing %d matching order (max 100)."
+msgid_plural "Showing %d matching orders (max 100)."
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/views/orders.php:91
+msgid "Showing the 100 most recent orders. Use search to find older orders."
+msgstr ""
+
+#: admin/views/orders.php:103
+#: public/templates/checkout.php:130
+msgid "Payment Method"
+msgstr ""
+
+#: admin/views/orders.php:134
+msgid "No orders matched your search."
+msgstr ""
+
+#: admin/views/orders.php:136
+msgid "No orders found."
+msgstr ""
+
+#: admin/views/settings.php:20
+msgid "Settings saved."
+msgstr ""
+
+#: admin/views/settings.php:39
+msgid "Avenia Digital Products Settings"
+msgstr ""
+
+#: admin/views/settings.php:43
+msgid "General"
+msgstr ""
+
+#: admin/views/settings.php:49
+msgid "Emails"
+msgstr ""
+
+#: admin/views/settings.php:52
+#: admin/views/settings.php:661
+msgid "Appearance"
+msgstr ""
+
+#: admin/views/settings.php:61
+msgid "General Settings"
+msgstr ""
+
+#: admin/views/settings.php:64
+msgid "More features"
+msgstr ""
+
+#. translators: %s: linked domain name (aveniadigitalproducts.com)
+#: admin/views/settings.php:71
+#, php-format
+msgid "Subscriptions, license keys, and sales reports are available in the paid plugin at %s"
+msgstr ""
+
+#: admin/views/settings.php:87
+msgid "Currency"
+msgstr ""
+
+#: admin/views/settings.php:100
+msgid "Currency Position"
+msgstr ""
+
+#: admin/views/settings.php:103
+msgid "Left"
+msgstr ""
+
+#: admin/views/settings.php:104
+msgid "Right"
+msgstr ""
+
+#: admin/views/settings.php:120
+msgid "No tax is calculated or mentioned at checkout."
+msgstr ""
+
+#: admin/views/settings.php:123
+msgid "Your product prices already include tax. Customers see a \"Prices include tax\" note. No rate is entered here; bake tax into the prices you set."
+msgstr ""
+
+#: admin/views/settings.php:126
+msgid "Tax is added on top of product prices at checkout. Enter the store-wide rate below."
+msgstr ""
+
+#: admin/views/settings.php:131
+msgid "Tax rate (%)"
+msgstr ""
+
+#: admin/views/settings.php:134
+msgid "Added to the cart subtotal at checkout (for example 20 for 20%)."
+msgstr ""
+
+#: admin/views/settings.php:138
+msgid "Require Email for Free Downloads"
+msgstr ""
+
+#: admin/views/settings.php:142
+msgid "Collect email before free downloads"
+msgstr ""
+
+#: admin/views/settings.php:144
+msgid "When enabled, visitors enter their email to receive a download link, get a customer account, and can re-download from My Account. When disabled, free products download instantly without email."
+msgstr ""
+
+#: admin/views/settings.php:148
+msgid "Account Creation"
+msgstr ""
+
+#: admin/views/settings.php:151
+msgid "Auto-Create Account After Purchase"
+msgstr ""
+
+#: admin/views/settings.php:152
+msgid "Guest Checkout"
+msgstr ""
+
+#: admin/views/settings.php:154
+msgid "Auto-create is the default. It silently registers a WordPress account after a successful purchase and sends the account confirmation email. Guest checkout is email-only with no login."
+msgstr ""
+
+#: admin/views/settings.php:158
+msgid "Remove Data on Uninstall"
+msgstr ""
+
+#: admin/views/settings.php:162
+msgid "If enabled, all Avenia Digital Products tables and settings will be permanently deleted when the plugin is uninstalled from the Plugins screen. Leave unchecked to keep data for future reinstalls."
+msgstr ""
+
+#: admin/views/settings.php:168
+msgid "Permalinks"
+msgstr ""
+
+#: admin/views/settings.php:171
+msgid "Product base"
+msgstr ""
+
+#: admin/views/settings.php:181
+msgid "product-name"
+msgstr ""
+
+#. translators: %s: example archive URL path
+#: admin/views/settings.php:186
+#, php-format
+msgid "URL slug for single products and the product archive (e.g. %s). Category and tag URLs use this base too. Save settings after changing."
+msgstr ""
+
+#: admin/views/settings.php:195
+msgid "Core Pages"
+msgstr ""
+
+#: admin/views/settings.php:198
+msgid "Products Page"
+msgstr ""
+
+#: admin/views/settings.php:206
+#: admin/views/settings.php:233
+#: admin/views/settings.php:253
+#: admin/views/settings.php:303
+#: admin/views/settings.php:323
+msgid "Select a page"
+msgstr ""
+
+#. translators: 1: customizable products page path, 2: product archive path
+#: admin/views/settings.php:216
+#, php-format
+msgid "A customizable product catalog page (e.g. %1$s). Add headings, images, or other blocks above the Products block in the page editor. The %2$s archive remains available separately."
+msgstr ""
+
+#: admin/views/settings.php:225
+msgid "Cart Page"
+msgstr ""
+
+#: admin/views/settings.php:240
+msgid "This page should contain the [aveniadp_cart] shortcode."
+msgstr ""
+
+#: admin/views/settings.php:245
+msgid "Checkout Page"
+msgstr ""
+
+#: admin/views/settings.php:260
+msgid "This page should contain the [aveniadp_checkout] shortcode."
+msgstr ""
+
+#: admin/views/settings.php:265
+msgid "Thank You Page"
+msgstr ""
+
+#: admin/views/settings.php:273
+msgid "Use homepage with inline notice"
+msgstr ""
+
+#: admin/views/settings.php:280
+msgid "Optional. After a successful purchase, customers will be redirected to this page with order details. If not set, the homepage with an inline thank-you notice is used."
+msgstr ""
+
+#: admin/views/settings.php:285
+msgid "Skip cart"
+msgstr ""
+
+#: admin/views/settings.php:289
+msgid "After adding a product to the cart, redirect customers straight to the checkout page (bypassing the cart page)."
+msgstr ""
+
+#: admin/views/settings.php:291
+msgid "Requires a valid Checkout Page selected above. The cart still stores items in the background."
+msgstr ""
+
+#: admin/views/settings.php:295
+msgid "Account Page"
+msgstr ""
+
+#: admin/views/settings.php:310
+msgid "This page should contain the [aveniadp_account] shortcode to show customer account details."
+msgstr ""
+
+#: admin/views/settings.php:315
+msgid "Login Page"
+msgstr ""
+
+#: admin/views/settings.php:330
+msgid "This page should contain the [aveniadp_login] shortcode to provide a front-end login form."
+msgstr ""
+
+#: admin/views/settings.php:353
+msgid "Payment Settings"
+msgstr ""
+
+#: admin/views/settings.php:358
+#: includes/functions/aveniadp-functions.php:115
+msgid "Simulated checkout"
+msgstr ""
+
+#: admin/views/settings.php:359
+#: includes/functions/aveniadp-functions.php:133
+msgid "Orders complete instantly. Nothing is charged and no payment provider is contacted."
+msgstr ""
+
+#: admin/views/settings.php:360
+#: includes/functions/aveniadp-functions.php:122
+msgid "Test checkout (sandbox)"
+msgstr ""
+
+#: admin/views/settings.php:361
+#: includes/functions/aveniadp-functions.php:140
+msgid "Customers pay through your enabled payment providers using test credentials. No real money is charged."
+msgstr ""
+
+#: admin/views/settings.php:362
+#: includes/functions/aveniadp-functions.php:119
+msgid "Live checkout"
+msgstr ""
+
+#: admin/views/settings.php:363
+#: includes/functions/aveniadp-functions.php:137
+msgid "Customers pay through your enabled payment providers using live credentials. Real money is charged."
+msgstr ""
+
+#: admin/views/settings.php:365
+msgid "What customers experience at checkout right now"
+msgstr ""
+
+#: admin/views/settings.php:373
+msgid "You are accepting real payments."
+msgstr ""
+
+#: admin/views/settings.php:374
+msgid "Customers can be charged real money. Confirm your live credentials and webhooks before promoting your store."
+msgstr ""
+
+#: admin/views/settings.php:379
+#: admin/views/status.php:34
+msgid "Checkout mode"
+msgstr ""
+
+#: admin/views/settings.php:382
+msgid "Simulate payments"
+msgstr ""
+
+#: admin/views/settings.php:386
+msgid "Skip payment processing (for testing)"
+msgstr ""
+
+#: admin/views/settings.php:389
+msgid "Turn this on while building your store. Checkout completes without contacting a payment provider."
+msgstr ""
+
+#: admin/views/settings.php:394
+msgid "Real payments use"
+msgstr ""
+
+#: admin/views/settings.php:399
+msgid "Test mode (sandbox)"
+msgstr ""
+
+#: admin/views/settings.php:400
+msgid "Practice checkouts with test cards. No real charges."
+msgstr ""
+
+#: admin/views/settings.php:404
+msgid "Live mode"
+msgstr ""
+
+#: admin/views/settings.php:405
+msgid "Real customer payments. Money is actually charged."
+msgstr ""
+
+#: admin/views/settings.php:409
+msgid "Only one credential set is used at a time. You can save both test and live keys below and switch here when you are ready."
+msgstr ""
+
+#: admin/views/settings.php:415
+msgid "Payment providers"
+msgstr ""
+
+#: admin/views/settings.php:419
+msgid "These settings are saved for later. Checkout ignores them until you turn off simulate payments."
+msgstr ""
+
+#: admin/views/settings.php:422
+#: admin/views/status.php:122
+#: includes/functions/aveniadp-functions.php:614
+#: includes/gateways/class-aveniadp-stripe.php:232
+msgid "Stripe"
+msgstr ""
+
+#: admin/views/settings.php:425
+msgid "Enable Stripe"
+msgstr ""
+
+#: admin/views/settings.php:432
+#: admin/views/settings.php:486
+msgid "Test credentials"
+msgstr ""
+
+#: admin/views/settings.php:433
+#: admin/views/settings.php:455
+#: admin/views/settings.php:487
+#: admin/views/settings.php:505
+msgid "In use"
+msgstr ""
+
+#: admin/views/settings.php:434
+#: admin/views/settings.php:456
+#: admin/views/settings.php:488
+#: admin/views/settings.php:506
+msgid "Saved"
+msgstr ""
+
+#: admin/views/settings.php:437
+#: admin/views/settings.php:491
+msgid "Saved for later. Switch to test mode above to use these credentials."
+msgstr ""
+
+#: admin/views/settings.php:439
+#: admin/views/settings.php:461
+msgid "Secret key"
+msgstr ""
+
+#: admin/views/settings.php:443
+#: admin/views/settings.php:465
+msgid "Webhook signing secret"
+msgstr ""
+
+#: admin/views/settings.php:447
+#: admin/views/settings.php:469
+msgid "When do I need this?"
+msgstr ""
+
+#: admin/views/settings.php:448
+#: admin/views/settings.php:470
+msgid "Optional if customers return to your site after checkout. Recommended as a backup if they close the browser early. If you register a webhook in Stripe, paste the matching signing secret here, otherwise Stripe events will be rejected. Use the webhook URL on the System Status page."
+msgstr ""
+
+#: admin/views/settings.php:454
+#: admin/views/settings.php:504
+#: includes/functions/aveniadp-functions.php:154
+msgid "Live credentials"
+msgstr ""
+
+#: admin/views/settings.php:459
+#: admin/views/settings.php:509
+msgid "Saved for later. Switch to live mode above to use these credentials."
+msgstr ""
+
+#: admin/views/settings.php:476
+#: admin/views/status.php:166
+#: includes/functions/aveniadp-functions.php:615
+#: includes/gateways/class-aveniadp-paypal.php:138
+msgid "PayPal"
+msgstr ""
+
+#: admin/views/settings.php:479
+msgid "Enable PayPal"
+msgstr ""
+
+#: admin/views/settings.php:493
+#: admin/views/settings.php:511
+msgid "Client ID"
+msgstr ""
+
+#: admin/views/settings.php:497
+#: admin/views/settings.php:515
+msgid "Secret"
+msgstr ""
+
+#: admin/views/settings.php:529
+msgid "Email Settings"
+msgstr ""
+
+#: admin/views/settings.php:530
+msgid "All emails use a shared layout with your logo and footer. Edit only the message body below. The logo and styling are applied automatically."
+msgstr ""
+
+#: admin/views/settings.php:533
+msgid "From Name"
+msgstr ""
+
+#: admin/views/settings.php:539
+msgid "From Email"
+msgstr ""
+
+#: admin/views/settings.php:545
+msgid "Email Logo"
+msgstr ""
+
+#: admin/views/settings.php:554
+msgid "Select Logo"
+msgstr ""
+
+#: admin/views/settings.php:555
+msgid "Remove Logo"
+msgstr ""
+
+#: admin/views/settings.php:557
+msgid "Shown at the top of every email. If empty, your theme custom logo or site name is used."
+msgstr ""
+
+#: admin/views/settings.php:561
+msgid "Order Confirmation Email"
+msgstr ""
+
+#: admin/views/settings.php:566
+msgid "Enable order confirmation email"
+msgstr ""
+
+#: admin/views/settings.php:570
+#: admin/views/settings.php:597
+#: admin/views/settings.php:619
+#: admin/views/settings.php:645
+msgid "Subject"
+msgstr ""
+
+#: admin/views/settings.php:571
+#: includes/infrastructure/class-aveniadp-emails.php:684
+msgid "Order Confirmation #{order_id}"
+msgstr ""
+
+#: admin/views/settings.php:572
+#: admin/views/settings.php:599
+msgid "Placeholders: {order_id}"
+msgstr ""
+
+#: admin/views/settings.php:575
+#: admin/views/settings.php:602
+#: admin/views/settings.php:623
+#: admin/views/settings.php:650
+msgid "Email Content"
+msgstr ""
+
+#: admin/views/settings.php:576
+msgid "Placeholders: {order_id}, {order_total}, {order_items}, {product_titles}"
+msgstr ""
+
+#: admin/views/settings.php:583
+msgid "Admin New Order Email"
+msgstr ""
+
+#: admin/views/settings.php:588
+msgid "Enable admin new order email"
+msgstr ""
+
+#: admin/views/settings.php:592
+msgid "Recipient(s)"
+msgstr ""
+
+#: admin/views/settings.php:594
+msgid "Comma-separated email addresses. Defaults to the site admin email if empty."
+msgstr ""
+
+#: admin/views/settings.php:598
+#: includes/infrastructure/class-aveniadp-emails.php:689
+msgid "New Order #{order_id}"
+msgstr ""
+
+#: admin/views/settings.php:603
+msgid "Placeholders: {order_id}, {order_total}, {order_items}, {product_titles}, {customer_name}, {customer_email}, {payment_method}, {view_order_button}, {view_order_url}"
+msgstr ""
+
+#: admin/views/settings.php:610
+msgid "Account Confirmation Email"
+msgstr ""
+
+#: admin/views/settings.php:615
+msgid "Enable account confirmation email"
+msgstr ""
+
+#: admin/views/settings.php:620
+#: includes/infrastructure/class-aveniadp-emails.php:514
+#: includes/infrastructure/class-aveniadp-emails.php:694
+msgid "Welcome! Your account has been created"
+msgstr ""
+
+#: admin/views/settings.php:624
+msgid "Placeholders: {username}, {user_email}, {set_password_button}, {set_password_url}"
+msgstr ""
+
+#: admin/views/settings.php:631
+msgid "Download Link Email"
+msgstr ""
+
+#: admin/views/settings.php:636
+msgid "Enable download link email"
+msgstr ""
+
+#: admin/views/settings.php:640
+msgid "Email Link Expiration (days)"
+msgstr ""
+
+#: admin/views/settings.php:642
+msgid "Emailed download links expire after this many days. Account downloads are not affected."
+msgstr ""
+
+#: admin/views/settings.php:646
+#: includes/infrastructure/class-aveniadp-emails.php:590
+#: includes/infrastructure/class-aveniadp-emails.php:699
+msgid "Download: {product_title}"
+msgstr ""
+
+#: admin/views/settings.php:647
+msgid "Placeholder: {product_title}"
+msgstr ""
+
+#: admin/views/settings.php:651
+msgid "Placeholders: {product_title}, {download_url}, {download_button}, {download_expiration_days}, {account_url}, {account_button}"
+msgstr ""
+
+#: admin/views/settings.php:662
+msgid "Customize storefront buttons, account tabs, and borders. Text colors adjust automatically for contrast."
+msgstr ""
+
+#: admin/views/settings.php:665
+msgid "Button Background"
+msgstr ""
+
+#: admin/views/settings.php:675
+msgid "Primary action buttons on product, cart, checkout, and account pages."
+msgstr ""
+
+#: admin/views/settings.php:679
+msgid "Active Tab Background"
+msgstr ""
+
+#: admin/views/settings.php:689
+msgid "Selected account tab, option pills, pagination highlight, and email CTA buttons."
+msgstr ""
+
+#: admin/views/settings.php:693
+msgid "Border Color"
+msgstr ""
+
+#: admin/views/settings.php:703
+msgid "Borders on cards, tabs, form fields, and tables."
+msgstr ""
+
+#: admin/views/settings.php:707
+msgid "Cart & Checkout Background"
+msgstr ""
+
+#: admin/views/settings.php:717
+msgid "Background for the cart and checkout summary panels."
+msgstr ""
+
+#: admin/views/settings.php:723
+msgid "Save Settings"
+msgstr ""
+
+#: admin/views/status.php:26
+msgid "Environment"
+msgstr ""
+
+#: admin/views/status.php:30
+msgid "Plugin"
+msgstr ""
+
+#. translators: %s: linked Settings → Payment label
+#: admin/views/status.php:44
+#, php-format
+msgid "Change this under %s."
+msgstr ""
+
+#: admin/views/status.php:45
+msgid "Settings → Payment"
+msgstr ""
+
+#: admin/views/status.php:58
+msgid "Stripe Webhook URL"
+msgstr ""
+
+#: admin/views/status.php:62
+msgid "Page cache"
+msgstr ""
+
+#: admin/views/status.php:64
+msgid "Cart, checkout, account, login, thank-you, download, and payment-return URLs are excluded from full-page caching. Catalog pages remain cacheable; cart count and drawer load via AJAX."
+msgstr ""
+
+#: admin/views/status.php:68
+msgid "Protected uploads"
+msgstr ""
+
+#: admin/views/status.php:82
+msgid "Protected uploads directory could not be created."
+msgstr ""
+
+#: admin/views/status.php:85
+msgid "Apache .htaccess deny-all rules are present."
+msgstr ""
+
+#: admin/views/status.php:87
+msgid "Apache .htaccess deny-all rules are missing."
+msgstr ""
+
+#: admin/views/status.php:88
+msgid "Re-save a product file, or add deny-all rules to the protected folder. A file that only blocks .php is not enough."
+msgstr ""
+
+#: admin/views/status.php:99
+msgid "Nginx"
+msgstr ""
+
+#: admin/views/status.php:101
+msgid ".htaccess is ignored when Nginx serves static files. Add this to your server block (or ask your host to block the folder):"
+msgstr ""
+
+#: admin/views/status.php:105
+msgid "Authorized downloads still work through the plugin download endpoint; only direct static URL access is blocked."
+msgstr ""
+
+#: admin/views/status.php:111
+msgid "Download endpoint"
+msgstr ""
+
+#: admin/views/status.php:115
+msgid "URL pattern for secure customer download links (for reference only). The plugin fills in {access_key} automatically; you do not configure this URL anywhere."
+msgstr ""
+
+#: admin/views/status.php:126
+#: admin/views/status.php:170
+msgid "Enabled"
+msgstr ""
+
+#: admin/views/status.php:127
+#: admin/views/status.php:171
+msgid "Yes"
+msgstr ""
+
+#: admin/views/status.php:127
+#: admin/views/status.php:158
+#: admin/views/status.php:171
+#: admin/views/status.php:198
+msgid "No"
+msgstr ""
+
+#: admin/views/status.php:131
+#: admin/views/status.php:175
+msgid "In use at checkout"
+msgstr ""
+
+#: admin/views/status.php:132
+#: admin/views/status.php:176
+msgid "No — simulate payments is on"
+msgstr ""
+
+#: admin/views/status.php:136
+#: admin/views/status.php:180
+msgid "Credentials in use"
+msgstr ""
+
+#: admin/views/status.php:140
+#: admin/views/status.php:184
+msgid "keys configured"
+msgstr ""
+
+#: admin/views/status.php:140
+#: admin/views/status.php:184
+msgid "keys missing"
+msgstr ""
+
+#: admin/views/status.php:144
+msgid "Webhooks in use"
+msgstr ""
+
+#: admin/views/status.php:145
+msgid "Configured"
+msgstr ""
+
+#: admin/views/status.php:145
+msgid "Not configured"
+msgstr ""
+
+#: admin/views/status.php:148
+#: admin/views/status.php:188
+msgid "Other credentials saved"
+msgstr ""
+
+#. translators: %s: credential environment label
+#: admin/views/status.php:155
+#: admin/views/status.php:195
+#, php-format
+msgid "Yes — %s (not used until you switch)"
+msgstr ""
+
+#: avenia-digital-products.php:110
+msgid "Avenia Digital Products requires PHP 8.0 or higher."
+msgstr ""
+
+#: avenia-digital-products.php:111
+#: avenia-digital-products.php:120
+msgid "Plugin Activation Error"
+msgstr ""
+
+#: avenia-digital-products.php:119
+msgid "Avenia Digital Products requires WordPress 6.5 or higher."
+msgstr ""
+
+#: includes/commerce/class-aveniadp-cart.php:171
+#: includes/commerce/class-aveniadp-cart.php:328
+#: includes/infrastructure/class-aveniadp-downloads.php:868
+msgid "Invalid product."
+msgstr ""
+
+#: includes/commerce/class-aveniadp-cart.php:175
+msgid "This product is free—use the download button on the product page."
+msgstr ""
+
+#: includes/commerce/class-aveniadp-cart.php:181
+msgid "Product already in cart."
+msgstr ""
+
+#: includes/commerce/class-aveniadp-cart.php:191
+#: includes/commerce/class-aveniadp-cart.php:337
+msgid "Product price must be greater than 0."
+msgstr ""
+
+#: includes/commerce/class-aveniadp-cart.php:324
+#: includes/commerce/class-aveniadp-cart.php:767
+msgid "Product not found in cart."
+msgstr ""
+
+#: includes/commerce/class-aveniadp-cart.php:383
+#: public/templates/single-product-content.php:185
+msgid "Product pricing not configured."
+msgstr ""
+
+#: includes/commerce/class-aveniadp-cart.php:389
+msgid "Invalid number of sites selected."
+msgstr ""
+
+#: includes/commerce/class-aveniadp-cart.php:420
+msgid "No price configured for this number of sites."
+msgstr ""
+
+#: includes/commerce/class-aveniadp-cart.php:516
+msgid "Please enter a discount code."
+msgstr ""
+
+#: includes/commerce/class-aveniadp-cart.php:520
+#: includes/commerce/class-aveniadp-checkout.php:56
+msgid "Cart is empty."
+msgstr ""
+
+#: includes/commerce/class-aveniadp-cart.php:736
+msgid "Product added to cart."
+msgstr ""
+
+#: includes/commerce/class-aveniadp-cart.php:771
+msgid "Product removed from cart."
+msgstr ""
+
+#: includes/commerce/class-aveniadp-cart.php:801
+msgid "Cart updated."
+msgstr ""
+
+#: includes/commerce/class-aveniadp-cart.php:858
+msgid "Discount code applied."
+msgstr ""
+
+#: includes/commerce/class-aveniadp-cart.php:880
+msgid "Discount code removed."
+msgstr ""
+
+#: includes/commerce/class-aveniadp-checkout.php:68
+#: includes/commerce/class-aveniadp-checkout.php:81
+#: includes/commerce/class-aveniadp-customers.php:85
+#: includes/commerce/class-aveniadp-customers.php:202
+msgid "Invalid email address."
+msgstr ""
+
+#: includes/commerce/class-aveniadp-checkout.php:72
+#: public/class-aveniadp-public.php:136
+msgid "Please confirm your email address."
+msgstr ""
+
+#: includes/commerce/class-aveniadp-checkout.php:76
+#: public/class-aveniadp-public.php:137
+msgid "Email addresses do not match."
+msgstr ""
+
+#: includes/commerce/class-aveniadp-checkout.php:135
+#: includes/commerce/class-aveniadp-payments.php:118
+msgid "Invalid payment gateway."
+msgstr ""
+
+#: includes/commerce/class-aveniadp-customers.php:113
+msgid "Failed to create customer."
+msgstr ""
+
+#: includes/commerce/class-aveniadp-discounts.php:81
+msgid "Invalid discount code."
+msgstr ""
+
+#: includes/commerce/class-aveniadp-discounts.php:86
+msgid "Discount code has expired."
+msgstr ""
+
+#: includes/commerce/class-aveniadp-discounts.php:91
+msgid "Discount code usage limit reached."
+msgstr ""
+
+#: includes/commerce/class-aveniadp-discounts.php:98
+msgid "You have already used this discount code."
+msgstr ""
+
+#. translators: %s: minimum order amount
+#: includes/commerce/class-aveniadp-discounts.php:105
+#, php-format
+msgid "Minimum order amount: %s"
+msgstr ""
+
+#: includes/commerce/class-aveniadp-discounts.php:120
+msgid "Discount code not applicable to products in cart."
+msgstr ""
+
+#: includes/commerce/class-aveniadp-discounts.php:196
+#: includes/commerce/class-aveniadp-discounts.php:242
+msgid "A discount code with that name already exists."
+msgstr ""
+
+#: includes/commerce/class-aveniadp-discounts.php:202
+msgid "Could not create discount code."
+msgstr ""
+
+#: includes/commerce/class-aveniadp-discounts.php:254
+msgid "Could not update discount code."
+msgstr ""
+
+#: includes/commerce/class-aveniadp-discounts.php:272
+msgid "Discount code is required."
+msgstr ""
+
+#: includes/commerce/class-aveniadp-discounts.php:282
+msgid "Discount value must be greater than zero."
+msgstr ""
+
+#: includes/commerce/class-aveniadp-discounts.php:286
+msgid "Percentage discount cannot exceed 100%."
+msgstr ""
+
+#: includes/commerce/class-aveniadp-orders.php:74
+msgid "Failed to create order."
+msgstr ""
+
+#: includes/commerce/class-aveniadp-orders.php:130
+msgid "Failed to add order item."
+msgstr ""
+
+#: includes/commerce/class-aveniadp-payments.php:96
+msgid "Simulated payments are not enabled."
+msgstr ""
+
+#: includes/commerce/class-aveniadp-payments.php:122
+msgid "Payment gateway is disabled."
+msgstr ""
+
+#. translators: %s: site name
+#: includes/emails/wrapper.php:72
+#, php-format
+msgid "Sent by %s"
+msgstr ""
+
+#: includes/functions/aveniadp-cart-icon-block.php:59
+#: includes/infrastructure/class-aveniadp-install.php:392
+msgid "Cart"
+msgstr ""
+
+#: includes/functions/aveniadp-catalog-functions.php:83
+msgid "Previous"
+msgstr ""
+
+#: includes/functions/aveniadp-catalog-functions.php:84
+msgid "Next"
+msgstr ""
+
+#: includes/functions/aveniadp-catalog-functions.php:94
+#: includes/infrastructure/class-aveniadp-install.php:483
+#: includes/products/class-aveniadp-products.php:71
+#: public/templates/account.php:66
+msgid "Products"
+msgstr ""
+
+#: includes/functions/aveniadp-functions.php:157
+msgid "Test credentials (sandbox)"
+msgstr ""
+
+#: includes/functions/aveniadp-functions.php:373
+#: includes/products/class-aveniadp-products.php:835
+#: admin/assets/js/product-demo-panel.js:63
+msgid "View Demo"
+msgstr ""
+
+#. translators: %s: customer name
+#: includes/functions/aveniadp-functions.php:548
+#: includes/infrastructure/class-aveniadp-emails.php:735
+#, php-format
+msgid "Hi %s,"
+msgstr ""
+
+#: includes/functions/aveniadp-functions.php:551
+#: includes/infrastructure/class-aveniadp-emails.php:738
+msgid "Hi,"
+msgstr ""
+
+#. translators: 1: customer name, 2: email address
+#: includes/functions/aveniadp-functions.php:571
+#, php-format
+msgid "%1$s (%2$s)"
+msgstr ""
+
+#: includes/functions/aveniadp-functions.php:590
+msgid "Pending"
+msgstr ""
+
+#: includes/functions/aveniadp-functions.php:591
+msgid "Completed"
+msgstr ""
+
+#: includes/functions/aveniadp-functions.php:592
+msgid "Failed"
+msgstr ""
+
+#: includes/functions/aveniadp-functions.php:612
+msgid "Manual"
+msgstr ""
+
+#: includes/functions/aveniadp-functions.php:613
+msgid "Free download"
+msgstr ""
+
+#: includes/functions/aveniadp-functions.php:616
+msgid "Simulated"
+msgstr ""
+
+#: includes/functions/aveniadp-functions.php:797
+msgid "Send test email"
+msgstr ""
+
+#. translators: %s: admin user email address
+#: includes/functions/aveniadp-functions.php:805
+#, php-format
+msgid "Sends to %s using sample placeholder data."
+msgstr ""
+
+#: includes/functions/aveniadp-functions.php:1259
+msgid "This product is not available for purchase."
+msgstr ""
+
+#: includes/functions/aveniadp-functions.php:1260
+msgid "This product is offered as a free download."
+msgstr ""
+
+#: includes/functions/aveniadp-functions.php:1261
+msgid "This product is already in your cart."
+msgstr ""
+
+#: includes/functions/aveniadp-functions.php:1262
+msgid "The selected number of sites is not available for this product."
+msgstr ""
+
+#: includes/functions/aveniadp-functions.php:1263
+msgid "This product does not have a valid price configured."
+msgstr ""
+
+#: includes/functions/aveniadp-functions.php:1270
+msgid "Unable to add this product to the cart."
+msgstr ""
+
+#: includes/functions/aveniadp-pricing-functions.php:122
+#: public/templates/single-product-content.php:46
+msgid "Free"
+msgstr ""
+
+#: includes/functions/aveniadp-pricing-functions.php:238
+msgid "One-time purchase"
+msgstr ""
+
+#: includes/functions/aveniadp-tax-functions.php:21
+msgid "No Tax"
+msgstr ""
+
+#: includes/functions/aveniadp-tax-functions.php:22
+msgid "Prices include tax"
+msgstr ""
+
+#: includes/functions/aveniadp-tax-functions.php:23
+msgid "Add tax at checkout"
+msgstr ""
+
+#. translators: %s: tax rate percentage
+#: includes/functions/aveniadp-tax-functions.php:134
+#, php-format
+msgid "Tax (%s%%)"
+msgstr ""
+
+#: includes/functions/aveniadp-tax-functions.php:187
+#: public/class-aveniadp-public.php:144
+#: public/templates/cart-drawer.php:72
+msgid "Prices include tax."
+msgstr ""
+
+#: includes/gateways/class-aveniadp-paypal.php:107
+msgid "Avenia Digital Products: PayPal is enabled but API credentials are not configured for the active payment environment."
+msgstr ""
+
+#: includes/gateways/class-aveniadp-paypal.php:233
+msgid "PayPal credentials are not configured."
+msgstr ""
+
+#: includes/gateways/class-aveniadp-paypal.php:286
+msgid "PayPal authentication failed."
+msgstr ""
+
+#: includes/gateways/class-aveniadp-paypal.php:291
+msgid "No access token in response."
+msgstr ""
+
+#: includes/gateways/class-aveniadp-paypal.php:316
+msgid "Invalid order data."
+msgstr ""
+
+#: includes/gateways/class-aveniadp-paypal.php:324
+#: includes/gateways/class-aveniadp-paypal.php:441
+msgid "Invalid order reference."
+msgstr ""
+
+#: includes/gateways/class-aveniadp-paypal.php:396
+msgid "PayPal order creation failed."
+msgstr ""
+
+#: includes/gateways/class-aveniadp-paypal.php:402
+msgid "PayPal did not return an order ID."
+msgstr ""
+
+#: includes/gateways/class-aveniadp-paypal.php:419
+msgid "PayPal did not return an approval URL."
+msgstr ""
+
+#: includes/gateways/class-aveniadp-paypal.php:434
+msgid "Invalid or expired payment session."
+msgstr ""
+
+#: includes/gateways/class-aveniadp-paypal.php:473
+msgid "PayPal capture failed."
+msgstr ""
+
+#: includes/gateways/class-aveniadp-paypal.php:528
+msgid "Invalid PayPal capture response."
+msgstr ""
+
+#: includes/gateways/class-aveniadp-paypal.php:535
+#: includes/gateways/class-aveniadp-paypal.php:557
+msgid "PayPal payment was not completed."
+msgstr ""
+
+#: includes/gateways/class-aveniadp-paypal.php:545
+msgid "PayPal order does not match this store order."
+msgstr ""
+
+#: includes/gateways/class-aveniadp-paypal.php:582
+msgid "PayPal did not return a valid capture amount."
+msgstr ""
+
+#: includes/gateways/class-aveniadp-paypal.php:588
+msgid "PayPal payment amount or currency does not match this order."
+msgstr ""
+
+#: includes/gateways/class-aveniadp-stripe.php:138
+#: includes/gateways/class-aveniadp-stripe.php:167
+msgid "Discounted order total is too low to charge with Stripe."
+msgstr ""
+
+#: includes/gateways/class-aveniadp-stripe.php:147
+#: includes/gateways/class-aveniadp-stripe.php:311
+msgid "Invalid order amount."
+msgstr ""
+
+#: includes/gateways/class-aveniadp-stripe.php:197
+msgid "Avenia Digital Products: Stripe is enabled but the secret key is not configured for the active payment environment."
+msgstr ""
+
+#: includes/gateways/class-aveniadp-stripe.php:245
+msgid "Stripe secret key is not configured."
+msgstr ""
+
+#: includes/gateways/class-aveniadp-stripe.php:269
+msgid "No items in order."
+msgstr ""
+
+#. translators: 1: product name, 2: license quantity label (e.g. "5 sites")
+#: includes/gateways/class-aveniadp-stripe.php:289
+#, php-format
+msgid "%1$s — %2$s"
+msgstr ""
+
+#: includes/gateways/class-aveniadp-stripe.php:389
+msgid "Stripe did not return a checkout URL."
+msgstr ""
+
+#: includes/gateways/class-aveniadp-stripe.php:426
+msgid "Stripe request failed."
+msgstr ""
+
+#: includes/gateways/class-aveniadp-stripe.php:483
+msgid "Failed to verify payment with Stripe."
+msgstr ""
+
+#: includes/gateways/class-aveniadp-stripe.php:514
+#: includes/gateways/class-aveniadp-stripe.php:521
+#: includes/gateways/class-aveniadp-stripe.php:530
+#: includes/gateways/class-aveniadp-stripe.php:534
+#: includes/gateways/class-aveniadp-stripe.php:540
+msgid "Payment Error"
+msgstr ""
+
+#: includes/gateways/class-aveniadp-stripe.php:521
+#: includes/infrastructure/class-aveniadp-access.php:53
+msgid "Order not found."
+msgstr ""
+
+#: includes/gateways/class-aveniadp-stripe.php:530
+msgid "Stripe did not return a valid amount."
+msgstr ""
+
+#: includes/gateways/class-aveniadp-stripe.php:534
+msgid "Payment amount or currency mismatch."
+msgstr ""
+
+#: includes/gateways/class-aveniadp-stripe.php:540
+msgid "Invalid or unpaid session."
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-access.php:57
+msgid "Only completed orders can have access revoked."
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-access.php:61
+msgid "Access for this order has already been revoked."
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-access.php:77
+msgid "Failed to revoke order access."
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-access.php:107
+msgid "Customer not found."
+msgstr ""
+
+#. translators: 1: order ID, 2: error message
+#: includes/infrastructure/class-aveniadp-access.php:123
+#, php-format
+msgid "Order #%1$d: %2$s"
+msgstr ""
+
+#. translators: %s: asset file path
+#: includes/infrastructure/class-aveniadp-blocks.php:94
+#, php-format
+msgid "The Products block editor script is missing its asset file (%s). Rebuild blocks/products with npm run build."
+msgstr ""
+
+#. translators: %s: asset file path
+#: includes/infrastructure/class-aveniadp-blocks.php:101
+#, php-format
+msgid "The Cart Icon block editor script is missing its asset file (%s). Rebuild blocks/cart-icon with npm run build."
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-downloads.php:178
+msgid "Invalid download request."
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-downloads.php:178
+#: includes/infrastructure/class-aveniadp-downloads.php:183
+#: includes/infrastructure/class-aveniadp-downloads.php:264
+#: includes/infrastructure/class-aveniadp-downloads.php:272
+#: includes/infrastructure/class-aveniadp-downloads.php:968
+msgid "Download Error"
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-downloads.php:183
+#: includes/infrastructure/class-aveniadp-downloads.php:264
+msgid "Invalid download link."
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-downloads.php:191
+msgid "You do not have access to this download."
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-downloads.php:191
+#: includes/infrastructure/class-aveniadp-downloads.php:275
+msgid "Download Unavailable"
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-downloads.php:272
+msgid "This free download is no longer available."
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-downloads.php:275
+msgid "Download access for this order has been revoked."
+msgstr ""
+
+#. translators: %s: account page URL
+#: includes/infrastructure/class-aveniadp-downloads.php:283
+#, php-format
+msgid "This download link has expired. <a href=\"%s\">Log in to your account</a> to download anytime."
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-downloads.php:286
+msgid "Download Expired"
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-downloads.php:302
+#: includes/infrastructure/class-aveniadp-downloads.php:312
+#: includes/infrastructure/class-aveniadp-downloads.php:321
+msgid "File not found."
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-downloads.php:302
+#: includes/infrastructure/class-aveniadp-downloads.php:312
+#: includes/infrastructure/class-aveniadp-downloads.php:321
+msgid "File Not Found"
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-downloads.php:556
+msgid "Failed to create download."
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-downloads.php:655
+#: public/class-aveniadp-public.php:163
+msgid "Please enter a valid email address."
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-downloads.php:661
+msgid "Too many download requests. Please try again later."
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-downloads.php:697
+msgid "We sent the download link to your email again."
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-downloads.php:730
+msgid "Check your email for the download link."
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-downloads.php:851
+msgid "Could not prepare download."
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-downloads.php:872
+msgid "Product is not available."
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-downloads.php:876
+msgid "This product is not offered as a free download."
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-downloads.php:880
+msgid "No file is configured for this product."
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-downloads.php:894
+msgid "Please enter your email address."
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-downloads.php:968
+msgid "Invalid download URL."
+msgstr ""
+
+#. translators: %s: product title(s) placeholder
+#: includes/infrastructure/class-aveniadp-emails.php:148
+#, php-format
+msgid "Thanks for buying %s!"
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-emails.php:151
+msgid "Your order has been confirmed."
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-emails.php:152
+#: includes/infrastructure/class-aveniadp-emails.php:161
+#: blocks/products/build/index.js:1
+#: blocks/products/index.js:138
+msgid "Order"
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-emails.php:160
+msgid "You have received a new order."
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-emails.php:171
+msgid "Hello,"
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-emails.php:172
+msgid "An account has been created for you."
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-emails.php:173
+msgid "Username"
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-emails.php:174
+msgid "To set your password, please click the button below:"
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-emails.php:181
+msgid "Thank you for your purchase!"
+msgstr ""
+
+#. translators: %s: product title placeholder
+#: includes/infrastructure/class-aveniadp-emails.php:184
+#, php-format
+msgid "You can download %s using the link below:"
+msgstr ""
+
+#. translators: %s: number of days
+#: includes/infrastructure/class-aveniadp-emails.php:190
+#, php-format
+msgid "This download link expires in %s days."
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-emails.php:193
+msgid "You can always download this product anytime from your account:"
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-emails.php:376
+#: includes/infrastructure/class-aveniadp-emails.php:782
+msgid "View Order"
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-emails.php:400
+msgid "your product"
+msgstr ""
+
+#. translators: %d: order ID
+#: includes/infrastructure/class-aveniadp-emails.php:430
+#, php-format
+msgid "Order Confirmation #%d"
+msgstr ""
+
+#. translators: %d: order ID
+#: includes/infrastructure/class-aveniadp-emails.php:477
+#, php-format
+msgid "New Order #%d"
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-emails.php:526
+#: includes/infrastructure/class-aveniadp-emails.php:794
+msgid "Set Password"
+msgstr ""
+
+#. translators: %s: product title
+#: includes/infrastructure/class-aveniadp-emails.php:589
+#, php-format
+msgid "Download: %s"
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-emails.php:603
+#: includes/infrastructure/class-aveniadp-emails.php:802
+msgid "Download Now"
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-emails.php:606
+#: includes/infrastructure/class-aveniadp-emails.php:805
+#: public/class-aveniadp-public.php:162
+#: public/templates/single-product-content.php:242
+msgid "Go to My Account"
+msgstr ""
+
+#. translators: %s: email subject line
+#: includes/infrastructure/class-aveniadp-emails.php:658
+#, php-format
+msgid "[Test] %s"
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-emails.php:741
+msgid "Sample Product"
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-install.php:399
+#: public/class-aveniadp-public.php:170
+#: public/templates/cart-drawer.php:81
+msgid "Checkout"
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-install.php:406
+msgid "My Account"
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-install.php:413
+msgid "Login"
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-install.php:420
+msgid "Order Received"
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-install.php:421
+msgid "Thank you for your order. You will receive an email with your download links shortly."
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-protected-uploads.php:229
+#: includes/infrastructure/class-aveniadp-protected-uploads.php:250
+msgid "Direct access to this file is not allowed."
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-protected-uploads.php:229
+#: includes/infrastructure/class-aveniadp-protected-uploads.php:250
+msgid "Forbidden"
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-protected-uploads.php:351
+msgid "Could not create the protected uploads directory."
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-protected-uploads.php:363
+msgid "Could not write a probe file to test direct URL access."
+msgstr ""
+
+#. translators: %s: error message
+#: includes/infrastructure/class-aveniadp-protected-uploads.php:390
+#, php-format
+msgid "Could not reach the probe URL (%s). Check the protected folder manually in a private browser window."
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-protected-uploads.php:403
+msgid "Direct URL access is not blocked. On Nginx (and hosts that serve static files through Nginx), .htaccess is ignored — add the Nginx deny location below, or ask your host to block this folder."
+msgstr ""
+
+#: includes/infrastructure/class-aveniadp-protected-uploads.php:411
+msgid "Direct URL access appears blocked."
+msgstr ""
+
+#. translators: %d: HTTP status code
+#: includes/infrastructure/class-aveniadp-protected-uploads.php:420
+#, php-format
+msgid "Unexpected probe response (HTTP %d). Verify a protected file URL returns 403 in a private browser window."
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:69
+msgctxt "Post Type General Name"
+msgid "Products"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:70
+msgctxt "Post Type Singular Name"
+msgid "Product"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:73
+msgid "Product Archives"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:74
+msgid "Product Attributes"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:75
+msgid "Parent Product:"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:76
+msgid "All Products"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:77
+msgid "Add New Product"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:78
+msgid "Add New"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:79
+msgid "New Product"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:80
+msgid "Edit Product"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:81
+msgid "Update Product"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:82
+msgid "View Product"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:83
+msgid "View Products"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:84
+msgid "Search Product"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:85
+msgid "Not found"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:86
+msgid "Not found in Trash"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:87
+msgid "Featured Image"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:88
+msgid "Set featured image"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:89
+msgid "Remove featured image"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:90
+msgid "Use as featured image"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:91
+msgid "Insert into product"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:92
+msgid "Uploaded to this product"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:93
+msgid "Products list"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:94
+msgid "Products list navigation"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:95
+msgid "Filter products list"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:100
+msgid "Digital products for sale"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:299
+msgid "Recommended: square image, at least 1200×1200 px. Images are automatically cropped to square for catalog and product pages."
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:317
+msgctxt "taxonomy general name"
+msgid "Product Categories"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:318
+msgctxt "taxonomy singular name"
+msgid "Product Category"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:319
+msgid "Search Categories"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:320
+#: blocks/products/build/index.js:1
+#: blocks/products/index.js:52
+msgid "All Categories"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:321
+msgid "Parent Category"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:322
+msgid "Parent Category:"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:323
+msgid "Edit Category"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:324
+msgid "Update Category"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:325
+msgid "Add New Category"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:326
+msgid "New Category Name"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:327
+msgid "Categories"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:348
+msgctxt "taxonomy general name"
+msgid "Product Tags"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:349
+msgctxt "taxonomy singular name"
+msgid "Product Tag"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:350
+msgid "Search Tags"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:351
+msgid "Popular Tags"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:352
+#: blocks/products/build/index.js:1
+#: blocks/products/index.js:63
+msgid "All Tags"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:353
+msgid "Edit Tag"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:354
+msgid "Update Tag"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:355
+msgid "Add New Tag"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:356
+msgid "New Tag Name"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:357
+msgid "Separate tags with commas"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:358
+msgid "Add or remove tags"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:359
+msgid "Choose from the most used tags"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:360
+msgid "No tags found"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:361
+msgid "Tags"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:389
+#: includes/products/class-aveniadp-products.php:1355
+msgid "Product Details"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:398
+msgid "Pricing"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:407
+msgid "Additional Info"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:417
+msgid "Product Gallery"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:426
+#: admin/assets/js/product-demo-panel.js:99
+msgid "Demo link"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:435
+#: public/templates/related-products.php:24
+msgid "Related Products"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:444
+msgid "Catalog Display"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:474
+msgid "Download Source"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:479
+msgid "Uploaded file"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:484
+msgid "External URL"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:487
+msgid "Choose whether customers receive a file stored securely by this plugin or are redirected to an external link."
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:491
+msgid "Download File"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:494
+msgid "Select File"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:495
+msgid "Remove File"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:496
+msgid "Select the file customers will download after purchase. Files are stored in a protected folder and can only be accessed through secure download links."
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:509
+msgid "External Download URL"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:519
+msgid "Customers still use your secure download link, then are redirected to this URL. HTTPS is recommended."
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:523
+msgid "Free download (catalog)"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:527
+msgid "Offer this file for free without checkout or cart."
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:529
+msgid "Visitors get a secure download link immediately. Requires an uploaded file or external URL above. The paid cart is bypassed on the product page."
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:547
+#: admin/assets/js/product-catalog-panel.js:52
+msgid "Shows this product full width at the top of the shop and catalog with a 9:4 image. Only one product can be pinned at a time."
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:549
+#: admin/assets/js/product-catalog-panel.js:62
+#: admin/assets/js/product-catalog-panel.js:98
+msgid "Catalog display"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:552
+#: admin/assets/js/product-catalog-panel.js:78
+msgid "Pin to catalog"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:578
+msgid "Configure price tiers by sites. In Sites, use 0 for unlimited. In price fields, 0 means free."
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:598
+#: includes/products/class-aveniadp-products.php:763
+#: public/class-aveniadp-public.php:149
+#: public/templates/cart.php:58
+#: public/templates/cart.php:74
+msgid "Remove"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:604
+msgid "Add Pricing Option"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:630
+#: includes/products/class-aveniadp-products.php:654
+#: includes/products/class-aveniadp-products.php:669
+msgid "Direct checkout link"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:631
+msgid "Select a Checkout Page under Avenia Digital Products → Settings → Pages to generate direct checkout links."
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:655
+msgid "Configure at least one paid pricing option before generating a direct checkout link."
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:671
+msgid "Share this link to add this product to the cart and go straight to checkout. The checkout page URL comes from your plugin settings and updates automatically if you change the checkout page."
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:690
+msgid "Direct checkout URL"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:699
+msgid "Copy link"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:727
+msgid "Optional accordion sections shown on the product page (for example returns or refund policies)."
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:730
+msgid "Content supports Markdown: **bold**, *italic*, [link text](https://example.com), and bullet lists starting with -"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:738
+msgid "Add Section"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:761
+msgid "Section title"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:765
+msgid "Content"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:770
+msgid "Write Markdown content for this section…"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:787
+msgid "Add images for the product page gallery. The featured image is shown first; these appear as additional images."
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:825
+#: admin/assets/js/product-demo-panel.js:55
+msgid "Optional demo button on the product page. Leave the URL empty to hide it. Opens in a new tab."
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:828
+#: admin/assets/js/product-demo-panel.js:61
+msgid "Button text"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:839
+#: admin/assets/js/product-demo-panel.js:72
+msgid "Link URL"
+msgstr ""
+
+#. translators: %d: maximum number of related products
+#: includes/products/class-aveniadp-products.php:870
+#: admin/assets/js/product-related-products-panel.js:183
+#, php-format,js-format
+msgid "Choose up to %d products to show below this product. Leave empty to use products from the same category."
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:878
+msgid "Search products"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:883
+#: admin/assets/js/product-related-products-panel.js:196
+msgid "Search products…"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:887
+#: public/templates/related-products.php:23
+#: admin/assets/js/product-related-products-panel.js:208
+#: admin/assets/js/product-related-products-panel.js:284
+msgid "Related products"
+msgstr ""
+
+#: includes/products/class-aveniadp-products.php:889
+#: admin/assets/js/product-related-products-panel.js:221
+msgid "No other products found."
+msgstr ""
+
+#: public/class-aveniadp-public.php:133
+msgid "Processing..."
+msgstr ""
+
+#: public/class-aveniadp-public.php:134
+msgid "Something went wrong. Please try again."
+msgstr ""
+
+#: public/class-aveniadp-public.php:135
+msgid "Email is required."
+msgstr ""
+
+#: public/class-aveniadp-public.php:139
+#: public/templates/cart-drawer.php:61
+#: public/templates/cart.php:93
+#: public/templates/checkout.php:55
+msgid "Subtotal"
+msgstr ""
+
+#: public/class-aveniadp-public.php:141
+msgid "Due today"
+msgstr ""
+
+#: public/class-aveniadp-public.php:142
+#: public/templates/cart-drawer.php:65
+msgid "Discount"
+msgstr ""
+
+#: public/class-aveniadp-public.php:145
+#: public/templates/cart-drawer.php:46
+#: public/templates/cart.php:79
+msgid "Discount Code"
+msgstr ""
+
+#: public/class-aveniadp-public.php:146
+#: public/templates/cart.php:70
+msgid "Discount applied:"
+msgstr ""
+
+#: public/class-aveniadp-public.php:147
+#: public/templates/cart-drawer.php:42
+msgid "Have a discount code?"
+msgstr ""
+
+#: public/class-aveniadp-public.php:148
+#: public/templates/cart-drawer.php:50
+#: public/templates/cart.php:83
+msgid "Apply"
+msgstr ""
+
+#: public/class-aveniadp-public.php:150
+msgid "Please select a license."
+msgstr ""
+
+#: public/class-aveniadp-public.php:151
+#: public/templates/single-product-content.php:178
+msgid "Update Cart"
+msgstr ""
+
+#: public/class-aveniadp-public.php:152
+#: public/templates/single-product-content.php:178
+msgid "Add to Cart"
+msgstr ""
+
+#: public/class-aveniadp-public.php:153
+msgid "Image gallery"
+msgstr ""
+
+#: public/class-aveniadp-public.php:154
+#: public/templates/single-product-content.php:215
+msgid "Close"
+msgstr ""
+
+#: public/class-aveniadp-public.php:155
+msgid "Previous image"
+msgstr ""
+
+#: public/class-aveniadp-public.php:156
+msgid "Next image"
+msgstr ""
+
+#: public/class-aveniadp-public.php:157
+#: public/templates/product-gallery.php:54
+msgid "View fullscreen"
+msgstr ""
+
+#: public/class-aveniadp-public.php:158
+#: public/templates/single-product-content.php:219
+msgid "Get your free download"
+msgstr ""
+
+#: public/class-aveniadp-public.php:159
+#: public/templates/single-product-content.php:221
+msgid "Email address"
+msgstr ""
+
+#: public/class-aveniadp-public.php:160
+#: public/templates/single-product-content.php:232
+msgid "Send download link"
+msgstr ""
+
+#: public/class-aveniadp-public.php:161
+#: public/templates/single-product-content.php:230
+msgid "We will email your download link. No account is required."
+msgstr ""
+
+#: public/class-aveniadp-public.php:164
+#: public/templates/cart-drawer.php:28
+msgid "Your cart"
+msgstr ""
+
+#. translators: %d: number of items in cart
+#: public/class-aveniadp-public.php:166
+#, php-format
+msgid "%d item in cart"
+msgstr ""
+
+#. translators: %d: number of items in cart
+#: public/class-aveniadp-public.php:168
+#, php-format
+msgid "%d items in cart"
+msgstr ""
+
+#: public/class-aveniadp-public.php:169
+#: public/templates/cart-drawer.php:87
+#: public/templates/cart.php:123
+#: public/templates/checkout.php:189
+msgid "Your cart is empty."
+msgstr ""
+
+#: public/class-aveniadp-public.php:171
+#: public/templates/cart.php:51
+msgid "Change options"
+msgstr ""
+
+#: public/class-aveniadp-public.php:172
+msgid "Remove item"
+msgstr ""
+
+#: public/class-aveniadp-public.php:173
+#: public/templates/cart-drawer.php:31
+msgid "Close cart"
+msgstr ""
+
+#. translators: %d: order ID
+#: public/class-aveniadp-public.php:292
+#, php-format
+msgid "Thank you for your order. Your order number is #%d."
+msgstr ""
+
+#: public/class-aveniadp-public.php:352
+msgid "Please log in to view your account."
+msgstr ""
+
+#: public/class-aveniadp-public.php:367
+msgid "You are already logged in."
+msgstr ""
+
+#: public/templates/account.php:26
+msgid "No customer account found."
+msgstr ""
+
+#: public/templates/account.php:63
+msgid "Account sections"
+msgstr ""
+
+#: public/templates/account.php:69
+#: public/templates/account.php:117
+#: public/templates/account.php:123
+msgid "Downloads"
+msgstr ""
+
+#: public/templates/account.php:75
+msgid "Purchased Products"
+msgstr ""
+
+#. translators: %s: purchase date
+#: public/templates/account.php:100
+#, php-format
+msgid "Purchased on %s"
+msgstr ""
+
+#: public/templates/account.php:112
+msgid "No products purchased yet."
+msgstr ""
+
+#: public/templates/account.php:134
+msgid "Unknown product"
+msgstr ""
+
+#. translators: %d: download count
+#: public/templates/account.php:137
+#, php-format
+msgid "%d times"
+msgstr ""
+
+#: public/templates/account.php:142
+#: public/templates/single-product-content.php:120
+msgid "Download"
+msgstr ""
+
+#: public/templates/account.php:151
+msgid "No downloads available."
+msgstr ""
+
+#: public/templates/account.php:157
+msgid "Log out"
+msgstr ""
+
+#. translators: %s: discount code
+#: public/templates/cart.php:102
+#: public/templates/checkout.php:64
+#, php-format
+msgid "Discount (%s)"
+msgstr ""
+
+#: public/templates/cart.php:119
+msgid "Proceed to Checkout"
+msgstr ""
+
+#: public/templates/catalog-grid.php:116
+msgid "No products found."
+msgstr ""
+
+#: public/templates/checkout.php:35
+msgid "Order Summary"
+msgstr ""
+
+#: public/templates/checkout.php:82
+msgid "Edit cart or change discount code"
+msgstr ""
+
+#: public/templates/checkout.php:105
+msgid "Confirm email"
+msgstr ""
+
+#. translators: %s: customer email address
+#: public/templates/checkout.php:114
+#, php-format
+msgid "Purchasing as %s"
+msgstr ""
+
+#: public/templates/checkout.php:125
+msgid "Test mode: your order will complete without a real charge. No payment provider is used."
+msgstr ""
+
+#: public/templates/checkout.php:178
+msgid "Complete Order"
+msgstr ""
+
+#: public/templates/checkout.php:179
+msgid "Complete Purchase"
+msgstr ""
+
+#: public/templates/checkout.php:185
+msgid "No payment methods are available. Please contact the store owner."
+msgstr ""
+
+#: public/templates/login.php:46
+msgid "Password"
+msgstr ""
+
+#: public/templates/login.php:53
+msgid "Remember me"
+msgstr ""
+
+#: public/templates/login.php:59
+msgid "Log In"
+msgstr ""
+
+#: public/templates/login.php:64
+msgid "Forgot password?"
+msgstr ""
+
+#. translators: %d: image number in the product gallery
+#: public/templates/product-gallery.php:99
+#, php-format
+msgid "Show image %d"
+msgstr ""
+
+#: public/templates/product-info-sections.php:24
+msgid "Additional information"
+msgstr ""
+
+#: public/templates/single-product-content.php:68
+msgid "Product category"
+msgstr ""
+
+#: public/templates/single-product-content.php:94
+msgid "Product Description"
+msgstr ""
+
+#: public/templates/single-product-content.php:124
+msgid "Free download is enabled but no download file or URL has been configured yet."
+msgstr ""
+
+#: public/templates/single-product-content.php:238
+msgid "Check your email"
+msgstr ""
+
+#: admin/assets/js/product-gallery-panel.js:170
+msgid "The featured image is shown first on the product page. Add extra images here for the gallery."
+msgstr ""
+
+#: admin/assets/js/product-gallery-panel.js:228
+msgid "Product gallery"
+msgstr ""
+
+#: admin/assets/js/product-related-products-panel.js:172
+msgid "(no title)"
+msgstr ""
+
+#: admin/assets/js/product-related-products-panel.js:214
+msgid "Loading products…"
+msgstr ""
+
+#: blocks/cart-icon/build/index.js:1
+#: blocks/cart-icon/index.js:35
+msgid "Cart Icon"
+msgstr ""
+
+#: blocks/cart-icon/build/index.js:1
+#: blocks/cart-icon/index.js:37
+msgid "Icon style"
+msgstr ""
+
+#: blocks/cart-icon/build/index.js:1
+#: blocks/cart-icon/index.js:41
+msgid "Shopping bag"
+msgstr ""
+
+#: blocks/cart-icon/build/index.js:1
+#: blocks/cart-icon/index.js:45
+msgid "Shopping cart"
+msgstr ""
+
+#: blocks/cart-icon/build/index.js:1
+#: blocks/cart-icon/index.js:49
+msgid "Basket"
+msgstr ""
+
+#: blocks/cart-icon/build/index.js:1
+#: blocks/cart-icon/index.js:58
+msgid "Icon size (px)"
+msgstr ""
+
+#: blocks/cart-icon/build/index.js:1
+#: blocks/cart-icon/index.js:67
+msgid "Show item count"
+msgstr ""
+
+#: blocks/cart-icon/build/index.js:1
+#: blocks/cart-icon/index.js:75
+msgid "Hide count when cart is empty"
+msgstr ""
+
+#: blocks/cart-icon/build/index.js:1
+#: blocks/cart-icon/index.js:86
+msgid "Accessible label"
+msgstr ""
+
+#: blocks/cart-icon/build/index.js:1
+#: blocks/cart-icon/index.js:87
+msgid "Used by screen readers. Defaults to “Cart”."
+msgstr ""
+
+#: blocks/products/build/index.js:1
+#: blocks/products/index.js:78
+msgid "Product Settings"
+msgstr ""
+
+#: blocks/products/build/index.js:1
+#: blocks/products/index.js:81
+msgid "Products per page"
+msgstr ""
+
+#: blocks/products/build/index.js:1
+#: blocks/products/index.js:90
+msgid "Columns"
+msgstr ""
+
+#: blocks/products/build/index.js:1
+#: blocks/products/index.js:99
+msgid "Category"
+msgstr ""
+
+#: blocks/products/build/index.js:1
+#: blocks/products/index.js:107
+msgid "Tag"
+msgstr ""
+
+#: blocks/products/build/index.js:1
+#: blocks/products/index.js:113
+msgid "Order by"
+msgstr ""
+
+#: blocks/products/build/index.js:1
+#: blocks/products/index.js:121
+msgid "Title"
+msgstr ""
+
+#: blocks/products/build/index.js:1
+#: blocks/products/index.js:129
+msgid "Menu Order"
+msgstr ""
+
+#: blocks/products/build/index.js:1
+#: blocks/products/index.js:142
+msgid "Descending"
+msgstr ""
+
+#: blocks/products/build/index.js:1
+#: blocks/products/index.js:146
+msgid "Ascending"
+msgstr ""
+
+#: blocks/products/build/index.js:1
+#: blocks/products/index.js:154
+msgid "Display Options"
+msgstr ""
+
+#: blocks/products/build/index.js:1
+#: blocks/products/index.js:157
+msgid "Show image"
+msgstr ""
+
+#: blocks/products/build/index.js:1
+#: blocks/products/index.js:164
+msgid "Show excerpt"
+msgstr ""
+
+#: blocks/products/build/index.js:1
+#: blocks/products/index.js:171
+msgid "Show price"
+msgstr ""
+
+#: blocks/cart-icon/block.json
+msgctxt "block title"
+msgid "Cart Icon"
+msgstr ""
+
+#: blocks/cart-icon/block.json
+msgctxt "block description"
+msgid "Cart icon button that opens the side cart drawer and shows the number of items."
+msgstr ""
+
+#: blocks/cart-icon/block.json
+msgctxt "block keyword"
+msgid "cart"
+msgstr ""
+
+#: blocks/cart-icon/block.json
+msgctxt "block keyword"
+msgid "basket"
+msgstr ""
+
+#: blocks/cart-icon/block.json
+msgctxt "block keyword"
+msgid "bag"
+msgstr ""
+
+#: blocks/cart-icon/block.json
+#: blocks/products/block.json
+msgctxt "block keyword"
+msgid "shop"
+msgstr ""
+
+#: blocks/cart-icon/block.json
+msgctxt "block keyword"
+msgid "checkout"
+msgstr ""
+
+#: blocks/cart-icon/block.json
+msgctxt "block keyword"
+msgid "drawer"
+msgstr ""
+
+#: blocks/products/block.json
+msgctxt "block title"
+msgid "Products"
+msgstr ""
+
+#: blocks/products/block.json
+msgctxt "block description"
+msgid "Display a grid of Avenia Digital Products with filtering and display options."
+msgstr ""
+
+#: blocks/products/block.json
+msgctxt "block keyword"
+msgid "products"
+msgstr ""
+
+#: blocks/products/block.json
+msgctxt "block keyword"
+msgid "Avenia Digital Products"
+msgstr ""
+
+#: blocks/products/block.json
+msgctxt "block keyword"
+msgid "digital"
+msgstr ""
+
+#: blocks/products/block.json
+msgctxt "block keyword"
+msgid "catalog"
+msgstr ""
+
+#: blocks/products/block.json
+msgctxt "block keyword"
+msgid "grid"
+msgstr ""

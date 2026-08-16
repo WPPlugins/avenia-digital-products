@@ -1,0 +1,56 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "avenia-digital-products/cart-icon",
+	"version": "1.0.0",
+	"title": "Cart Icon",
+	"category": "avenia-digital-products",
+	"icon": "cart",
+	"description": "Cart icon button that opens the side cart drawer and shows the number of items.",
+	"keywords": [
+		"cart",
+		"basket",
+		"bag",
+		"shop",
+		"checkout",
+		"drawer"
+	],
+	"textdomain": "avenia-digital-products",
+	"attributes": {
+		"iconStyle": {
+			"type": "string",
+			"default": "bag"
+		},
+		"iconSize": {
+			"type": "number",
+			"default": 24
+		},
+		"showCount": {
+			"type": "boolean",
+			"default": true
+		},
+		"hideCountWhenEmpty": {
+			"type": "boolean",
+			"default": false
+		},
+		"label": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"supports": {
+		"html": false,
+		"align": true,
+		"spacing": {
+			"margin": true,
+			"padding": true
+		},
+		"color": {
+			"text": true,
+			"background": true
+		}
+	},
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

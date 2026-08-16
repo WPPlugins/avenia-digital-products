@@ -1,0 +1,13 @@
+/**
+ * Cart Icon block wrapper (frontend).
+ *
+ * Icon layout lives in public/assets/css/public.css.
+ *
+ * @package AveniaDigitalProducts
+ * @since 1.0.0
+ */
+
+.aveniadp-cart-icon-block {
+	display: inline-flex;
+	vertical-align: middle;
+}

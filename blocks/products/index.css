@@ -1,0 +1,12 @@
+/**
+ * Products block editor-only styles.
+ *
+ * Catalog card layout comes from public.css (enqueued in the block editor).
+ *
+ * @package AveniaDigitalProducts
+ * @since 1.0.0
+ */
+
+.wp-block-avenia-digital-products-products .components-placeholder {
+	min-height: 120px;
+}

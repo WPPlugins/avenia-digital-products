@@ -1,0 +1,25 @@
+/**
+ * Product demo link block editor panel.
+ *
+ * @package AveniaDigitalProducts
+ * @since 1.0.0
+ */
+
+.aveniadp-product-demo-panel .components-panel__body-title {
+	font-weight: 500;
+}
+
+.aveniadp-product-demo-panel .components-panel__body-toggle {
+	border-top: 1px solid #e0e0e0;
+}
+
+.aveniadp-product-demo-panel__help {
+	margin: 0 0 12px;
+	color: #757575;
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+.aveniadp-product-demo-panel__field {
+	margin-top: 12px;
+}

@@ -1,0 +1,72 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "avenia-digital-products/products",
+	"version": "1.0.0",
+	"title": "Products",
+	"category": "avenia-digital-products",
+	"icon": "grid-view",
+	"description": "Display a grid of Avenia Digital Products with filtering and display options.",
+	"keywords": [
+		"products",
+		"Avenia Digital Products",
+		"digital",
+		"shop",
+		"catalog",
+		"grid"
+	],
+	"textdomain": "avenia-digital-products",
+	"attributes": {
+		"perPage": {
+			"type": "number",
+			"default": 12
+		},
+		"category": {
+			"type": "string",
+			"default": ""
+		},
+		"tag": {
+			"type": "string",
+			"default": ""
+		},
+		"orderBy": {
+			"type": "string",
+			"default": "date"
+		},
+		"order": {
+			"type": "string",
+			"default": "DESC"
+		},
+		"columns": {
+			"type": "number",
+			"default": 3
+		},
+		"showImage": {
+			"type": "boolean",
+			"default": true
+		},
+		"showExcerpt": {
+			"type": "boolean",
+			"default": false
+		},
+		"showPrice": {
+			"type": "boolean",
+			"default": true
+		}
+	},
+	"supports": {
+		"html": false,
+		"align": [ "wide", "full" ],
+		"spacing": {
+			"margin": true,
+			"padding": true
+		},
+		"color": {
+			"text": true,
+			"background": true
+		}
+	},
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

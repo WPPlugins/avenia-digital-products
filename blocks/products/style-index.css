@@ -1,0 +1,12 @@
+/**
+ * Products block wrapper (frontend).
+ *
+ * Card and grid styles live in public/assets/css/public.css.
+ *
+ * @package AveniaDigitalProducts
+ * @since 1.0.0
+ */
+
+.aveniadp-products-block {
+	margin: 0;
+}

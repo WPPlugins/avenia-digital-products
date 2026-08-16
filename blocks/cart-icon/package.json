@@ -1,0 +1,12 @@
+{
+	"name": "aveniadp-cart-icon-block",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"build": "wp-scripts build index.js --output-path=build",
+		"start": "wp-scripts start index.js --output-path=build"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^30.10.0"
+	}
+}

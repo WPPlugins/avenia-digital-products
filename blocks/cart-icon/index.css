@@ -1,0 +1,10 @@
+/**
+ * Cart Icon block editor-only styles.
+ *
+ * @package AveniaDigitalProducts
+ * @since 1.0.0
+ */
+
+.wp-block-avenia-digital-products-cart-icon .components-placeholder {
+	min-height: 48px;
+}
