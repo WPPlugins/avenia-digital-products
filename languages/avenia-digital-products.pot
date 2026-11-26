@@ -2,14 +2,14 @@
 # This file is distributed under the GPL v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Avenia Digital Products 1.0.0\n"
+"Project-Id-Version: Avenia Digital Products 1.0.1\n"
 "Report-Msgid-Bugs-To: https://aveniadigitalproducts.com\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-08-11T11:06:15+00:00\n"
+"POT-Creation-Date: 2026-11-26T18:09:20+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: avenia-digital-products\n"
@@ -247,13 +247,13 @@ msgstr ""
 
 #: admin/views/customer-view.php:58
 #: admin/views/customers.php:101
-#: public/templates/checkout.php:96
+#: public/templates/checkout.php:134
 msgid "Name"
 msgstr ""
 
 #: admin/views/customer-view.php:62
 #: admin/views/customers.php:102
-#: public/templates/checkout.php:100
+#: public/templates/checkout.php:138
 #: public/templates/login.php:41
 msgid "Email"
 msgstr ""
@@ -282,8 +282,8 @@ msgstr ""
 #: includes/infrastructure/class-aveniadp-emails.php:164
 #: public/class-aveniadp-public.php:140
 #: public/templates/cart-drawer.php:74
-#: public/templates/cart.php:112
-#: public/templates/checkout.php:74
+#: public/templates/cart.php:118
+#: public/templates/checkout.php:112
 msgid "Total"
 msgstr ""
 
@@ -664,7 +664,7 @@ msgid "Showing the 100 most recent orders. Use search to find older orders."
 msgstr ""
 
 #: admin/views/orders.php:103
-#: public/templates/checkout.php:130
+#: public/templates/checkout.php:168
 msgid "Payment Method"
 msgstr ""
 
@@ -2455,9 +2455,7 @@ msgstr ""
 
 #: includes/products/class-aveniadp-products.php:598
 #: includes/products/class-aveniadp-products.php:763
-#: public/class-aveniadp-public.php:149
 #: public/templates/cart.php:58
-#: public/templates/cart.php:74
 msgid "Remove"
 msgstr ""
 
@@ -2576,8 +2574,8 @@ msgstr ""
 
 #: public/class-aveniadp-public.php:139
 #: public/templates/cart-drawer.php:61
-#: public/templates/cart.php:93
-#: public/templates/checkout.php:55
+#: public/templates/cart.php:99
+#: public/templates/checkout.php:93
 msgid "Subtotal"
 msgstr ""
 
@@ -2592,24 +2590,34 @@ msgstr ""
 
 #: public/class-aveniadp-public.php:145
 #: public/templates/cart-drawer.php:46
-#: public/templates/cart.php:79
+#: public/templates/cart.php:85
+#: public/templates/checkout.php:77
 msgid "Discount Code"
 msgstr ""
 
 #: public/class-aveniadp-public.php:146
-#: public/templates/cart.php:70
+#: public/templates/cart.php:71
+#: public/templates/checkout.php:58
 msgid "Discount applied:"
 msgstr ""
 
 #: public/class-aveniadp-public.php:147
 #: public/templates/cart-drawer.php:42
+#: public/templates/checkout.php:73
 msgid "Have a discount code?"
 msgstr ""
 
 #: public/class-aveniadp-public.php:148
 #: public/templates/cart-drawer.php:50
-#: public/templates/cart.php:83
+#: public/templates/cart.php:89
+#: public/templates/checkout.php:81
 msgid "Apply"
+msgstr ""
+
+#: public/class-aveniadp-public.php:149
+#: public/templates/cart.php:78
+#: public/templates/checkout.php:65
+msgid "Remove discount code"
 msgstr ""
 
 #: public/class-aveniadp-public.php:150
@@ -2687,8 +2695,8 @@ msgstr ""
 
 #: public/class-aveniadp-public.php:169
 #: public/templates/cart-drawer.php:87
-#: public/templates/cart.php:123
-#: public/templates/checkout.php:189
+#: public/templates/cart.php:129
+#: public/templates/checkout.php:227
 msgid "Your cart is empty."
 msgstr ""
 
@@ -2772,13 +2780,13 @@ msgid "Log out"
 msgstr ""
 
 #. translators: %s: discount code
-#: public/templates/cart.php:102
-#: public/templates/checkout.php:64
+#: public/templates/cart.php:108
+#: public/templates/checkout.php:102
 #, php-format
 msgid "Discount (%s)"
 msgstr ""
 
-#: public/templates/cart.php:119
+#: public/templates/cart.php:125
 msgid "Proceed to Checkout"
 msgstr ""
 
@@ -2790,33 +2798,33 @@ msgstr ""
 msgid "Order Summary"
 msgstr ""
 
-#: public/templates/checkout.php:82
-msgid "Edit cart or change discount code"
+#: public/templates/checkout.php:120
+msgid "Edit cart"
 msgstr ""
 
-#: public/templates/checkout.php:105
+#: public/templates/checkout.php:143
 msgid "Confirm email"
 msgstr ""
 
 #. translators: %s: customer email address
-#: public/templates/checkout.php:114
+#: public/templates/checkout.php:152
 #, php-format
 msgid "Purchasing as %s"
 msgstr ""
 
-#: public/templates/checkout.php:125
+#: public/templates/checkout.php:163
 msgid "Test mode: your order will complete without a real charge. No payment provider is used."
 msgstr ""
 
-#: public/templates/checkout.php:178
+#: public/templates/checkout.php:216
 msgid "Complete Order"
 msgstr ""
 
-#: public/templates/checkout.php:179
+#: public/templates/checkout.php:217
 msgid "Complete Purchase"
 msgstr ""
 
-#: public/templates/checkout.php:185
+#: public/templates/checkout.php:223
 msgid "No payment methods are available. Please contact the store owner."
 msgstr ""
 

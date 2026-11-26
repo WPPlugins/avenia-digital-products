@@ -146,7 +146,7 @@ class AVENIADP_Public {
 					'discountApplied'          => __( 'Discount applied:', 'avenia-digital-products' ),
 					'haveDiscountCode'         => __( 'Have a discount code?', 'avenia-digital-products' ),
 					'apply'                    => __( 'Apply', 'avenia-digital-products' ),
-					'removeDiscount'           => __( 'Remove', 'avenia-digital-products' ),
+					'removeDiscount'           => __( 'Remove discount code', 'avenia-digital-products' ),
 					'selectLicense'            => __( 'Please select a license.', 'avenia-digital-products' ),
 					'updateCart'               => __( 'Update Cart', 'avenia-digital-products' ),
 					'addToCart'                => __( 'Add to Cart', 'avenia-digital-products' ),

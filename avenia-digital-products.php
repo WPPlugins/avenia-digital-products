@@ -3,7 +3,7 @@
  * Plugin Name: Avenia Digital Products
  * Plugin URI: https://aveniadigitalproducts.com
  * Description: Sell digital downloads on WordPress with Stripe, PayPal, a cart, checkout, and secure file delivery.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Avenia Labs
  * Author URI: https://avenialabs.com
  * License: GPL v2 or later
@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // Define plugin constants.
-define( 'AVENIADP_VERSION', '1.0.0' );
+define( 'AVENIADP_VERSION', '1.0.1' );
 define( 'AVENIADP_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 define( 'AVENIADP_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'AVENIADP_PRODUCT_POST_TYPE', 'aveniadp_product' );

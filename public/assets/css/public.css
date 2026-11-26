@@ -1576,8 +1576,49 @@ body.aveniadp-classic-theme.aveniadp-custom-single-product main #comments {
 .aveniadp-applied-discount {
 	display: flex;
 	align-items: center;
-	flex-wrap: wrap;
-	gap: 10px;
+	justify-content: space-between;
+	flex-wrap: nowrap;
+	gap: 12px;
+}
+
+.aveniadp-applied-discount-text {
+	flex: 1;
+	min-width: 0;
+}
+
+.aveniadp-remove-discount-btn {
+	appearance: none;
+	box-sizing: border-box;
+	flex: 0 0 auto;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 1.75rem;
+	height: 1.75rem;
+	margin: 0;
+	padding: 0;
+	border: 1px solid currentColor;
+	border-radius: 50%;
+	background: transparent;
+	color: inherit;
+	cursor: pointer;
+	font: inherit;
+	font-size: 1.125rem;
+	line-height: 1;
+	opacity: 0.75;
+	transition: opacity 0.15s ease, background-color 0.15s ease;
+}
+
+.aveniadp-remove-discount-btn:hover,
+.aveniadp-remove-discount-btn:focus-visible {
+	opacity: 1;
+	background-color: rgba(0, 0, 0, 0.06);
+	outline: none;
+}
+
+.aveniadp-remove-discount-btn[aria-disabled="true"] {
+	cursor: default;
+	opacity: 0.45;
 }
 
 .aveniadp-add-to-cart-message,
@@ -1707,9 +1748,6 @@ a.aveniadp-demo-btn {
 	color: inherit;
 }
 
-.aveniadp-applied-discount .aveniadp-cart-item-edit {
-	margin-top: 0;
-}
 
 .aveniadp-checkout-item-info {
 	flex: 1;
@@ -1896,6 +1934,31 @@ a.aveniadp-demo-btn {
 
 .aveniadp-checkout-edit-cart a:hover {
 	color: inherit;
+}
+
+.aveniadp-checkout-discount {
+	margin: 0 0 20px;
+}
+
+.aveniadp-checkout-discount .aveniadp-cart-drawer-discount-toggle {
+	display: inline-block;
+}
+
+.aveniadp-checkout-discount .screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	word-wrap: normal !important;
+}
+
+.aveniadp-checkout-discount .aveniadp-applied-discount {
+	margin: 0;
 }
 
 .aveniadp-checkout-fields {

@@ -50,10 +50,48 @@ $is_logged_in = is_user_logged_in();
 				<?php endforeach; ?>
 			</ul>
 
-			<div class="aveniadp-cart-totals">
+			<div class="aveniadp-cart-discount aveniadp-checkout-discount" id="aveniadp-cart-discount">
+				<?php if ( $applied_code ) : ?>
+					<p class="aveniadp-applied-discount aveniadp-notice is-success">
+						<span class="aveniadp-applied-discount-text">
+							<?php
+							echo esc_html__( 'Discount applied:', 'avenia-digital-products' ) . ' ';
+							echo '<strong>' . esc_html( $applied_code ) . '</strong>';
+							?>
+						</span>
+						<button
+							type="button"
+							class="aveniadp-remove-discount aveniadp-remove-discount-btn"
+							aria-label="<?php esc_attr_e( 'Remove discount code', 'avenia-digital-products' ); ?>"
+						>
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</p>
+				<?php else : ?>
+					<details class="aveniadp-cart-drawer-discount-details">
+						<summary class="aveniadp-cart-drawer-discount-toggle">
+							<?php esc_html_e( 'Have a discount code?', 'avenia-digital-products' ); ?>
+						</summary>
+						<div class="aveniadp-discount-form aveniadp-cart-drawer-slide">
+							<div class="aveniadp-cart-drawer-slide-inner">
+								<label class="screen-reader-text" for="aveniadp_discount_code"><?php esc_html_e( 'Discount Code', 'avenia-digital-products' ); ?></label>
+								<div class="aveniadp-discount-form-row">
+									<input type="text" id="aveniadp_discount_code" name="discount_code" autocomplete="off" />
+									<button type="button" class="button aveniadp-option-btn aveniadp-apply-discount">
+										<?php esc_html_e( 'Apply', 'avenia-digital-products' ); ?>
+									</button>
+								</div>
+								<p class="aveniadp-notice aveniadp-discount-message" aria-live="polite" hidden></p>
+							</div>
+						</div>
+					</details>
+				<?php endif; ?>
+			</div>
+
+			<div class="aveniadp-cart-totals" id="aveniadp-cart-totals">
 				<div class="aveniadp-cart-totals-row">
 					<span><?php esc_html_e( 'Subtotal', 'avenia-digital-products' ); ?></span>
-					<span><?php echo esc_html( aveniadp_format_price( $cart_totals['subtotal'] ) ); ?></span>
+					<span class="aveniadp-cart-subtotal"><?php echo esc_html( aveniadp_format_price( $cart_totals['subtotal'] ) ); ?></span>
 				</div>
 				<?php if ( $cart_totals['discount_amount'] > 0 ) : ?>
 					<div class="aveniadp-cart-totals-row aveniadp-cart-discount-row">
@@ -66,20 +104,20 @@ $is_logged_in = is_user_logged_in();
 							);
 							?>
 						</span>
-						<span>&minus;<?php echo esc_html( aveniadp_format_price( $cart_totals['discount_amount'] ) ); ?></span>
+						<span class="aveniadp-cart-discount-amount">&minus;<?php echo esc_html( aveniadp_format_price( $cart_totals['discount_amount'] ) ); ?></span>
 					</div>
 				<?php endif; ?>
 				<?php aveniadp_render_cart_tax_totals_rows( $cart_totals ); ?>
 				<div class="aveniadp-cart-totals-row aveniadp-cart-total-row">
 					<strong><?php esc_html_e( 'Total', 'avenia-digital-products' ); ?></strong>
-					<strong><?php echo esc_html( aveniadp_format_price( $cart_totals['total'] ) ); ?></strong>
+					<strong class="aveniadp-cart-total"><?php echo esc_html( aveniadp_format_price( $cart_totals['total'] ) ); ?></strong>
 				</div>
 			</div>
 
 			<?php if ( $cart_url ) : ?>
 				<p class="aveniadp-checkout-edit-cart">
 					<a href="<?php echo esc_url( $cart_url ); ?>">
-						<?php esc_html_e( 'Edit cart or change discount code', 'avenia-digital-products' ); ?>
+						<?php esc_html_e( 'Edit cart', 'avenia-digital-products' ); ?>
 					</a>
 				</p>
 			<?php endif; ?>

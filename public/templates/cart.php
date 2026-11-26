@@ -66,13 +66,19 @@ $applied_code = $cart_totals['discount_code'];
 			<div class="aveniadp-cart-discount" id="aveniadp-cart-discount">
 			<?php if ( $applied_code ) : ?>
 				<p class="aveniadp-applied-discount aveniadp-notice is-success">
-					<?php
-					echo esc_html__( 'Discount applied:', 'avenia-digital-products' ) . ' ';
-					echo '<strong>' . esc_html( $applied_code ) . '</strong>';
-					?>
-					<a href="#" class="aveniadp-cart-item-edit aveniadp-remove-discount">
-						<?php esc_html_e( 'Remove', 'avenia-digital-products' ); ?>
-					</a>
+					<span class="aveniadp-applied-discount-text">
+						<?php
+						echo esc_html__( 'Discount applied:', 'avenia-digital-products' ) . ' ';
+						echo '<strong>' . esc_html( $applied_code ) . '</strong>';
+						?>
+					</span>
+					<button
+						type="button"
+						class="aveniadp-remove-discount aveniadp-remove-discount-btn"
+						aria-label="<?php esc_attr_e( 'Remove discount code', 'avenia-digital-products' ); ?>"
+					>
+						<span aria-hidden="true">&times;</span>
+					</button>
 				</p>
 			<?php else : ?>
 				<div class="aveniadp-discount-form">

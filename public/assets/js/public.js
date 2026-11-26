@@ -910,8 +910,10 @@
 			if (totals.has_discount) {
 				$wrap.html(
 					'<p class="aveniadp-applied-discount aveniadp-notice is-success">' +
-					appliedLabel + ' <strong></strong> ' +
-					'<a href="#" class="aveniadp-cart-item-edit aveniadp-remove-discount">' + removeLabel + '</a>' +
+					'<span class="aveniadp-applied-discount-text">' + appliedLabel + ' <strong></strong></span>' +
+					'<button type="button" class="aveniadp-remove-discount aveniadp-remove-discount-btn" aria-label="' + removeLabel + '">' +
+					'<span aria-hidden="true">&times;</span>' +
+					'</button>' +
 					'</p>'
 				);
 				$wrap.find('strong').text(totals.discount_code);
@@ -1275,28 +1277,57 @@
 				'</div>';
 
 			$('#aveniadp-cart-totals').html(html);
-			$('.aveniadp-proceed-checkout .aveniadp-add-to-cart-price').text(totals.total);
+			$('.aveniadp-proceed-checkout .aveniadp-add-to-cart-price, .aveniadp-checkout-submit .aveniadp-add-to-cart-price').text(totals.total);
 		}
 
 		function renderAppliedDiscount(totals) {
-			var removeLabel = aveniadpPublic.labels.removeDiscount || 'Remove';
-			var appliedLabel = aveniadpPublic.labels.discountApplied || 'Discount applied:';
-
-			if (totals.has_discount) {
-				$('#aveniadp-cart-discount').html(
-					'<p class="aveniadp-applied-discount aveniadp-notice is-success">' +
-					appliedLabel + ' <strong></strong> ' +
-					'<a href="#" class="aveniadp-cart-item-edit aveniadp-remove-discount">' + removeLabel + '</a>' +
-					'</p>'
-				);
-				$('#aveniadp-cart-discount strong').text(totals.discount_code);
+			var $target = $('#aveniadp-cart-discount');
+			if (!$target.length) {
 				return;
 			}
 
-			var applyLabel = aveniadpPublic.labels.apply || 'Apply';
-			var codeLabel = aveniadpPublic.labels.discountCode || 'Discount Code';
+			var labels = aveniadpPublic.labels || {};
+			var removeLabel = labels.removeDiscount || 'Remove';
+			var appliedLabel = labels.discountApplied || 'Discount applied:';
 
-			$('#aveniadp-cart-discount').html(
+			if (totals.has_discount) {
+				$target.html(
+					'<p class="aveniadp-applied-discount aveniadp-notice is-success">' +
+					'<span class="aveniadp-applied-discount-text">' + appliedLabel + ' <strong></strong></span>' +
+					'<button type="button" class="aveniadp-remove-discount aveniadp-remove-discount-btn" aria-label="' + removeLabel + '">' +
+					'<span aria-hidden="true">&times;</span>' +
+					'</button>' +
+					'</p>'
+				);
+				$target.find('strong').first().text(totals.discount_code);
+				return;
+			}
+
+			var applyLabel = labels.apply || 'Apply';
+			var codeLabel = labels.discountCode || 'Discount Code';
+			var useAccordion = $target.hasClass('aveniadp-checkout-discount') || $target.closest('.aveniadp-checkout').length > 0;
+
+			if (useAccordion) {
+				var toggleLabel = labels.haveDiscountCode || 'Have a discount code?';
+				$target.html(
+					'<details class="aveniadp-cart-drawer-discount-details">' +
+					'<summary class="aveniadp-cart-drawer-discount-toggle">' + toggleLabel + '</summary>' +
+					'<div class="aveniadp-discount-form aveniadp-cart-drawer-slide">' +
+					'<div class="aveniadp-cart-drawer-slide-inner">' +
+					'<label class="screen-reader-text" for="aveniadp_discount_code">' + codeLabel + '</label>' +
+					'<div class="aveniadp-discount-form-row">' +
+					'<input type="text" id="aveniadp_discount_code" name="discount_code" autocomplete="off" />' +
+					'<button type="button" class="button aveniadp-option-btn aveniadp-apply-discount">' + applyLabel + '</button>' +
+					'</div>' +
+					'<p class="aveniadp-notice aveniadp-discount-message" aria-live="polite" hidden></p>' +
+					'</div>' +
+					'</div>' +
+					'</details>'
+				);
+				return;
+			}
+
+			$target.html(
 				'<div class="aveniadp-discount-form">' +
 				'<label for="aveniadp_discount_code">' + codeLabel + '</label>' +
 				'<div class="aveniadp-discount-form-row">' +

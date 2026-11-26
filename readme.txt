@@ -2,9 +2,9 @@
 Contributors: avenialabs
 Tags: digital downloads, ecommerce, sell digital products, downloads, digital store
 Requires at least: 6.5
-Tested up to: 7.1
+Tested up to: 7.2
 Requires PHP: 8.0
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -165,6 +165,12 @@ When a paid order is placed, the plugin requests an OAuth access token with your
 This service is provided by PayPal: [User Agreement](https://www.paypal.com/us/legalhub/paypal/useragreement-full) and [Privacy Statement](https://www.paypal.com/us/legalhub/privacy-full).
 
 == Changelog ==
+
+= 1.0.1 =
+* Add discount code apply and remove on the checkout page for skip-cart and direct checkout flows.
+* Use a slide-down “Have a discount code?” control on checkout, matching the side cart.
+* Replace the text Remove link with a circular dismiss button on cart, checkout, and side cart.
+* Update checkout edit-cart link wording now that discounts can be changed on checkout.
 
 = 1.0.0 =
 * Initial release.
